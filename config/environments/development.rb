@@ -21,6 +21,8 @@ DocSearch::Application.configure do
 	# number of complex assets.
 	config.assets.debug = true
 
+	config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
+
 	config.es = Stretcher::Server.new 'http://nsa.local:9200/'
 	config.documents_path = File.join Rails.root, '../ocr'
 end
