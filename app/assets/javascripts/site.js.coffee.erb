@@ -1,0 +1,24 @@
+$ ->
+	do_filter = () ->
+		filter = $("#filter").val()
+		$.get "<%= path :pages, format: :json %>", filter: filter, (json) ->
+			tbody = $("#documents > tbody")
+			tbody.empty()
+
+
+			for page in json.pages
+				[doc, n] = [page.doc, page.page]
+
+				tr = $("<tr>")
+				tr.append "<th class=\"document\"><a href=\"<%= path :document, %i(doc), format: :pdf %>\">#{doc}</a></th>"
+				tr.append "<th class=\"page\">#{page.page}</th>"
+				tr.append "<td class=\"image\"><img src=\"<%= path :document_page, %i(doc n), format: :png %>\" /></td>"
+				tr.append "<td class=\"text\">#{page.content}"
+
+				tbody.append tr
+
+	$("#filter").on "keyup", (event) ->
+		return unless event.which == 13
+		do_filter()
+
+	$("#search").click () -> do_filter()

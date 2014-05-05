@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<table class="table table-bordered table-striped table-condensed table-hover">
+				<thead>
+				<tr>
+					<th>Documents</th>
+				</tr>
+				</thead>
+				<tbody>
+					<% @documents.each do |document| %>
+						<tr>
+							<th>
+								<%= link_to document, document_path(document), format: :pdf %>
+							</th>
+						</tr>
+					<% end %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

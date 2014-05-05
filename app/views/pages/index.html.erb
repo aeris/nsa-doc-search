@@ -1,0 +1,76 @@
+<div class="row">
+	<form action="<%= pages_path %>" method="get" class="col-sm-12 form-inline" role="form">
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-search"></i></span>
+				<input class="form-control" name="filter" placeholder="Filter" value="<%= params[:filter] %>">
+			</div>
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Search" class="btn btn-primary col-sm-12" />
+		</div>
+		<div class="form-group">
+			<%= select_tag :size, options_for_select(%w(10 50 100), params[:size]), class: %w(form-control) %>
+		</div>
+		<div class="form-group checkbox">
+			<label>
+				<%= check_box_tag :with_text, nil, params[:with_text] %>
+				Show text
+			</label>
+		</div>
+	</form>
+</div>
+<% unless @results.nil? %>
+	<div class="row spacer">
+		<div class="col-sm-12">
+			<table id="documents" class="table table-bordered table-striped table-condensed table-hover">
+				<thead>
+				<tr>
+					<th>Document</th>
+					<th>#</th>
+					<th>Page</th>
+					<%= content_tag :th, 'Text' if @with_text %>
+				</tr>
+				<tr>
+					<th colspan="<%= @with_text ? 4 : 3 %>" class="centered">
+						<% if @results.empty? %>
+							No result found
+						<% else
+							total = @results[:total]
+							pages = total / @size + 1
+						%>
+							<%= total %> documents found
+							<br/>
+							<%= content_tag :ul, class: %w(pagination pagination-sm) do %>
+								<%= page_link @page-1, '«', disabled: @page <= 0 %>
+								<% pages.times do |page|
+								   page += 1
+								%>
+									<%= page_link page, active: @page == page %>
+							    <% end %>
+								<%= page_link @page+1, '»', disabled: @page >= pages %>
+							<% end if pages > 1 %>
+						<% end %>
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+					<% @results[:items].each do |result|
+						doc, page = result[:doc], result[:page]
+					%>
+						<tr>
+							<th class="document">
+								<%= link_to doc, document_path(doc, format: :pdf) %>
+							</th>
+							<th class="page"><%= page+1 %></th>
+							<td class="image">
+								<%= image_tag document_page_path(doc, page, format: :png) %>
+							</td>
+							<%= content_tag :td, result[:text].html_safe if @with_text %>
+						</tr>
+					<% end %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+<% end %>

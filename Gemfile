@@ -12,8 +12,9 @@ gem 'bootstrap-sass'
 gem 'stretcher'
 gem 'faraday', '~> 0.8.9'
 
+gem 'therubyracer', platforms: :ruby
+
 group :development do
-	gem 'therubyracer', platforms: :ruby
 	gem 'uglifier'
 
 	gem 'debase'

@@ -20,7 +20,7 @@ DocSearch::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -59,7 +59,12 @@ DocSearch::Application.configure do
 
   # Precompile additional assets.
   # application.js.coffee, application.css.scss, and all non-JS/CSS in app/assets folder are already added.
-  # config.assets.precompile += %w( search.js )
+  assets = []
+  %w(javascripts/**/*.js javascripts/**/*.coffee stylesheets/**/*.css stylesheets/**/*.scss **/*.erb *.png).each do |ext|
+	  assets.concat Dir.glob File.join Rails.root, 'app/assets', ext
+  end
+  assets << '*.png'
+  config.assets.precompile += assets
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
@@ -76,5 +81,5 @@ DocSearch::Application.configure do
 
 
   config.es = Stretcher::Server.new 'http://localhost:9200/'
-  config.documents_path = File.join Rails.root, '../ocr'
+  config.documents_path = File.join Rails.root, '../../../ocr'
 end
