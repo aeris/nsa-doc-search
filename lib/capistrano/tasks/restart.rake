@@ -1,7 +1,9 @@
-task :fixperms do
-	on release_roles :app do
-		execute 'chown', '-R', 'www-data:www-data', release_path
+namespace :deploy do
+	task :restart do
+		on release_roles :app do
+			execute :touch, release_path.join('tmp/restart.txt')
+		end
 	end
 end
 
-before 'deploy:publishing', 'fixperms'
+after 'deploy:publishing', 'deploy:restart'

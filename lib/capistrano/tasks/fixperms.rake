@@ -1,3 +1,7 @@
 task :fixperms do
-	run %W(chown -R www-data:www-data #{latest_release}/)
+	on release_roles :app do
+		execute 'chown', '-R', 'www-data:www-data', release_path
+	end
 end
+
+before 'deploy:publishing', 'fixperms'
