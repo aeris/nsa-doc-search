@@ -1,18 +1,21 @@
 class DocumentsController < ApplicationController
-	respond_to :pdf
-	PDF_PATH = File.join Rails.configuration.documents_path, 'pdf'
+	#respond_to :pdf
 
 	def index
-		@documents = Dir["#{PDF_PATH}/*.pdf"].collect { |file| File.basename file, '.pdf' }.sort
+		@documents = Document.all.sort_by &:name
 	end
 
 	def show
-		document = pdf params[:id]
-		send_file document, type: 'application/pdf', disposition: :inline
-	end
+		@document = Document.find_by! name: params[:id]
 
-	private
-	def pdf(id)
-		File.join PDF_PATH, "#{id}.pdf"
+		respond_to do |format|
+			format.pdf do
+				send_file @document.pdf, type: 'application/pdf'
+			end
+			format.text do
+				self.content_type = 'text/plain'
+				self.response_body = @document.pages.times.collect { |n| @document.content n }
+			end
+		end
 	end
 end

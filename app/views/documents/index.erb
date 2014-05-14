@@ -4,15 +4,20 @@
 			<table class="table table-bordered table-striped table-condensed table-hover">
 				<thead>
 				<tr>
-					<th>Documents</th>
+					<th colspan="2">Documents</th>
 				</tr>
 				</thead>
 				<tbody>
 					<% @documents.each do |document| %>
 						<tr>
-							<th>
-								<%= link_to document, document_path(document), format: :pdf %>
-							</th>
+							<th><%= document.name %></th>
+							<td>
+								<% {pdf: 'acrobat', txt: 'text'}.each do |format, icon| %>
+									<%= link_to document_path(document, format: format) do
+									   image_tag 'empty.png', class: "sprite-silk-page_white_#{icon}"
+									end %>
+								<% end %>
+							</td>
 						</tr>
 					<% end %>
 				</tbody>

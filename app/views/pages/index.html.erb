@@ -42,7 +42,7 @@
 							<%= total %> documents found
 							<br/>
 							<%= content_tag :ul, class: %w(pagination pagination-sm) do %>
-								<%= page_link @page-1, '«', disabled: @page <= 0 %>
+								<%= page_link @page-1, '«', disabled: @page <= 1 %>
 								<% pages.times do |page|
 								   page += 1
 								%>

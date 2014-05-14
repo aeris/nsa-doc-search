@@ -24,5 +24,5 @@ DocSearch::Application.configure do
 	config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
 
 	config.es = Stretcher::Server.new 'http://nsa.local:9200/'
-	config.documents_path = File.join Rails.root, '../ocr'
+	config.documents_path = File.expand_path File.join Rails.root, '../docs'
 end

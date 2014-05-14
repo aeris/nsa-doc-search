@@ -4,7 +4,7 @@ module PagesHelper
 		clazz = []
 		if disabled
 			clazz << :disabled
-			link = link_to text, nil
+			link = link_to text, '#'
 		else
 			clazz << :active if active
 			link = link_to text, pages_path(filter: @filter, size: @size,

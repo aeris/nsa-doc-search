@@ -1,0 +1,5015 @@
+@mixin sprite-silk {
+	background: url(<%= asset_path 'silk.png' %>) no-repeat top left;
+	width: 16px;
+	height: 16px;
+}
+
+.sprite-silk-empty {
+	width: 16px;
+	height: 16px;
+}
+
+.sprite-silk-zoom_out {
+	@include sprite-silk;
+	background-position: 0px 0px;
+}
+
+.sprite-silk-zoom_in {
+	@include sprite-silk;
+	background-position: -16px 0px;
+}
+
+.sprite-silk-zoom {
+	@include sprite-silk;
+	background-position: 0px -16px;
+}
+
+.sprite-silk-xhtml_valid {
+	@include sprite-silk;
+	background-position: -16px -16px;
+}
+
+.sprite-silk-xhtml_go {
+	@include sprite-silk;
+	background-position: -32px 0px;
+}
+
+.sprite-silk-xhtml_delete {
+	@include sprite-silk;
+	background-position: -32px -16px;
+}
+
+.sprite-silk-xhtml_add {
+	@include sprite-silk;
+	background-position: 0px -32px;
+}
+
+.sprite-silk-xhtml {
+	@include sprite-silk;
+	background-position: -16px -32px;
+}
+
+.sprite-silk-wrench_orange {
+	@include sprite-silk;
+	background-position: -32px -32px;
+}
+
+.sprite-silk-wrench {
+	@include sprite-silk;
+	background-position: -48px 0px;
+}
+
+.sprite-silk-world:link {
+	@include sprite-silk;
+	background-position: -48px -16px;
+}
+
+.sprite-silk-world_go {
+	@include sprite-silk;
+	background-position: -48px -32px;
+}
+
+.sprite-silk-world_edit {
+	@include sprite-silk;
+	background-position: 0px -48px;
+}
+
+.sprite-silk-world_delete {
+	@include sprite-silk;
+	background-position: -16px -48px;
+}
+
+.sprite-silk-world_add {
+	@include sprite-silk;
+	background-position: -32px -48px;
+}
+
+.sprite-silk-world {
+	@include sprite-silk;
+	background-position: -48px -48px;
+}
+
+.sprite-silk-webcam_error {
+	@include sprite-silk;
+	background-position: -64px 0px;
+}
+
+.sprite-silk-webcam_delete {
+	@include sprite-silk;
+	background-position: -64px -16px;
+}
+
+.sprite-silk-webcam_add {
+	@include sprite-silk;
+	background-position: -64px -32px;
+}
+
+.sprite-silk-webcam {
+	@include sprite-silk;
+	background-position: -64px -48px;
+}
+
+.sprite-silk-weather_sun {
+	@include sprite-silk;
+	background-position: 0px -64px;
+}
+
+.sprite-silk-weather_snow {
+	@include sprite-silk;
+	background-position: -16px -64px;
+}
+
+.sprite-silk-weather_rain {
+	@include sprite-silk;
+	background-position: -32px -64px;
+}
+
+.sprite-silk-weather_lightning {
+	@include sprite-silk;
+	background-position: -48px -64px;
+}
+
+.sprite-silk-weather_cloudy {
+	@include sprite-silk;
+	background-position: -64px -64px;
+}
+
+.sprite-silk-weather_clouds {
+	@include sprite-silk;
+	background-position: -80px 0px;
+}
+
+.sprite-silk-wand {
+	@include sprite-silk;
+	background-position: -80px -16px;
+}
+
+.sprite-silk-vector_delete {
+	@include sprite-silk;
+	background-position: -80px -32px;
+}
+
+.sprite-silk-vector_add {
+	@include sprite-silk;
+	background-position: -80px -48px;
+}
+
+.sprite-silk-vector {
+	@include sprite-silk;
+	background-position: -80px -64px;
+}
+
+.sprite-silk-vcard_edit {
+	@include sprite-silk;
+	background-position: 0px -80px;
+}
+
+.sprite-silk-vcard_delete {
+	@include sprite-silk;
+	background-position: -16px -80px;
+}
+
+.sprite-silk-vcard_add {
+	@include sprite-silk;
+	background-position: -32px -80px;
+}
+
+.sprite-silk-vcard {
+	@include sprite-silk;
+	background-position: -48px -80px;
+}
+
+.sprite-silk-user_suit {
+	@include sprite-silk;
+	background-position: -64px -80px;
+}
+
+.sprite-silk-user_red {
+	@include sprite-silk;
+	background-position: -80px -80px;
+}
+
+.sprite-silk-user_orange {
+	@include sprite-silk;
+	background-position: -96px 0px;
+}
+
+.sprite-silk-user_green {
+	@include sprite-silk;
+	background-position: -96px -16px;
+}
+
+.sprite-silk-user_gray {
+	@include sprite-silk;
+	background-position: -96px -32px;
+}
+
+.sprite-silk-user_go {
+	@include sprite-silk;
+	background-position: -96px -48px;
+}
+
+.sprite-silk-user_female {
+	@include sprite-silk;
+	background-position: -96px -64px;
+}
+
+.sprite-silk-user_edit {
+	@include sprite-silk;
+	background-position: -96px -80px;
+}
+
+.sprite-silk-user_delete {
+	@include sprite-silk;
+	background-position: 0px -96px;
+}
+
+.sprite-silk-user_comment {
+	@include sprite-silk;
+	background-position: -16px -96px;
+}
+
+.sprite-silk-user_add {
+	@include sprite-silk;
+	background-position: -32px -96px;
+}
+
+.sprite-silk-user {
+	@include sprite-silk;
+	background-position: -48px -96px;
+}
+
+.sprite-silk-tux {
+	@include sprite-silk;
+	background-position: -64px -96px;
+}
+
+.sprite-silk-transmit_go {
+	@include sprite-silk;
+	background-position: -80px -96px;
+}
+
+.sprite-silk-transmit_error {
+	@include sprite-silk;
+	background-position: -96px -96px;
+}
+
+.sprite-silk-transmit_edit {
+	@include sprite-silk;
+	background-position: -112px 0px;
+}
+
+.sprite-silk-transmit_delete {
+	@include sprite-silk;
+	background-position: -112px -16px;
+}
+
+.sprite-silk-transmit_blue {
+	@include sprite-silk;
+	background-position: -112px -32px;
+}
+
+.sprite-silk-transmit_add {
+	@include sprite-silk;
+	background-position: -112px -48px;
+}
+
+.sprite-silk-transmit {
+	@include sprite-silk;
+	background-position: -112px -64px;
+}
+
+.sprite-silk-timeline_marker {
+	@include sprite-silk;
+	background-position: -112px -80px;
+}
+
+.sprite-silk-time_go {
+	@include sprite-silk;
+	background-position: -112px -96px;
+}
+
+.sprite-silk-time_delete {
+	@include sprite-silk;
+	background-position: 0px -112px;
+}
+
+.sprite-silk-time_add {
+	@include sprite-silk;
+	background-position: -16px -112px;
+}
+
+.sprite-silk-time {
+	@include sprite-silk;
+	background-position: -32px -112px;
+}
+
+.sprite-silk-tick {
+	@include sprite-silk;
+	background-position: -48px -112px;
+}
+
+.sprite-silk-thumb_up {
+	@include sprite-silk;
+	background-position: -64px -112px;
+}
+
+.sprite-silk-thumb_down {
+	@include sprite-silk;
+	background-position: -80px -112px;
+}
+
+.sprite-silk-textfield_rename {
+	@include sprite-silk;
+	background-position: -96px -112px;
+}
+
+.sprite-silk-textfield_key {
+	@include sprite-silk;
+	background-position: -112px -112px;
+}
+
+.sprite-silk-textfield_delete {
+	@include sprite-silk;
+	background-position: -128px 0px;
+}
+
+.sprite-silk-textfield_add {
+	@include sprite-silk;
+	background-position: -128px -16px;
+}
+
+.sprite-silk-textfield {
+	@include sprite-silk;
+	background-position: -128px -32px;
+}
+
+.sprite-silk-text_uppercase {
+	@include sprite-silk;
+	background-position: -128px -48px;
+}
+
+.sprite-silk-text_underline {
+	@include sprite-silk;
+	background-position: -128px -64px;
+}
+
+.sprite-silk-text_superscript {
+	@include sprite-silk;
+	background-position: -128px -80px;
+}
+
+.sprite-silk-text_subscript {
+	@include sprite-silk;
+	background-position: -128px -96px;
+}
+
+.sprite-silk-text_strikethrough {
+	@include sprite-silk;
+	background-position: -128px -112px;
+}
+
+.sprite-silk-text_smallcaps {
+	@include sprite-silk;
+	background-position: 0px -128px;
+}
+
+.sprite-silk-text_signature {
+	@include sprite-silk;
+	background-position: -16px -128px;
+}
+
+.sprite-silk-text_replace {
+	@include sprite-silk;
+	background-position: -32px -128px;
+}
+
+.sprite-silk-text_padding_top {
+	@include sprite-silk;
+	background-position: -48px -128px;
+}
+
+.sprite-silk-text_padding_right {
+	@include sprite-silk;
+	background-position: -64px -128px;
+}
+
+.sprite-silk-text_padding_left {
+	@include sprite-silk;
+	background-position: -80px -128px;
+}
+
+.sprite-silk-text_padding_bottom {
+	@include sprite-silk;
+	background-position: -96px -128px;
+}
+
+.sprite-silk-text_lowercase {
+	@include sprite-silk;
+	background-position: -112px -128px;
+}
+
+.sprite-silk-text_list_numbers {
+	@include sprite-silk;
+	background-position: -128px -128px;
+}
+
+.sprite-silk-text_list_bullets {
+	@include sprite-silk;
+	background-position: -144px 0px;
+}
+
+.sprite-silk-text_linespacing {
+	@include sprite-silk;
+	background-position: -144px -16px;
+}
+
+.sprite-silk-text_letterspacing {
+	@include sprite-silk;
+	background-position: -144px -32px;
+}
+
+.sprite-silk-text_letter_omega {
+	@include sprite-silk;
+	background-position: -144px -48px;
+}
+
+.sprite-silk-text_kerning {
+	@include sprite-silk;
+	background-position: -144px -64px;
+}
+
+.sprite-silk-text_italic {
+	@include sprite-silk;
+	background-position: -144px -80px;
+}
+
+.sprite-silk-text_indent_remove {
+	@include sprite-silk;
+	background-position: -144px -96px;
+}
+
+.sprite-silk-text_indent {
+	@include sprite-silk;
+	background-position: -144px -112px;
+}
+
+.sprite-silk-text_horizontalrule {
+	@include sprite-silk;
+	background-position: -144px -128px;
+}
+
+.sprite-silk-text_heading_6 {
+	@include sprite-silk;
+	background-position: 0px -144px;
+}
+
+.sprite-silk-text_heading_5 {
+	@include sprite-silk;
+	background-position: -16px -144px;
+}
+
+.sprite-silk-text_heading_4 {
+	@include sprite-silk;
+	background-position: -32px -144px;
+}
+
+.sprite-silk-text_heading_3 {
+	@include sprite-silk;
+	background-position: -48px -144px;
+}
+
+.sprite-silk-text_heading_2 {
+	@include sprite-silk;
+	background-position: -64px -144px;
+}
+
+.sprite-silk-text_heading_1 {
+	@include sprite-silk;
+	background-position: -80px -144px;
+}
+
+.sprite-silk-text_dropcaps {
+	@include sprite-silk;
+	background-position: -96px -144px;
+}
+
+.sprite-silk-text_columns {
+	@include sprite-silk;
+	background-position: -112px -144px;
+}
+
+.sprite-silk-text_bold {
+	@include sprite-silk;
+	background-position: -128px -144px;
+}
+
+.sprite-silk-text_allcaps {
+	@include sprite-silk;
+	background-position: -144px -144px;
+}
+
+.sprite-silk-text_align_right {
+	@include sprite-silk;
+	background-position: -160px 0px;
+}
+
+.sprite-silk-text_align_left {
+	@include sprite-silk;
+	background-position: -160px -16px;
+}
+
+.sprite-silk-text_align_justify {
+	@include sprite-silk;
+	background-position: -160px -32px;
+}
+
+.sprite-silk-text_align_center {
+	@include sprite-silk;
+	background-position: -160px -48px;
+}
+
+.sprite-silk-television_delete {
+	@include sprite-silk;
+	background-position: -160px -64px;
+}
+
+.sprite-silk-television_add {
+	@include sprite-silk;
+	background-position: -160px -80px;
+}
+
+.sprite-silk-television {
+	@include sprite-silk;
+	background-position: -160px -96px;
+}
+
+.sprite-silk-telephone:link {
+	@include sprite-silk;
+	background-position: -160px -112px;
+}
+
+.sprite-silk-telephone_key {
+	@include sprite-silk;
+	background-position: -160px -128px;
+}
+
+.sprite-silk-telephone_go {
+	@include sprite-silk;
+	background-position: -160px -144px;
+}
+
+.sprite-silk-telephone_error {
+	@include sprite-silk;
+	background-position: 0px -160px;
+}
+
+.sprite-silk-telephone_edit {
+	@include sprite-silk;
+	background-position: -16px -160px;
+}
+
+.sprite-silk-telephone_delete {
+	@include sprite-silk;
+	background-position: -32px -160px;
+}
+
+.sprite-silk-telephone_add {
+	@include sprite-silk;
+	background-position: -48px -160px;
+}
+
+.sprite-silk-telephone {
+	@include sprite-silk;
+	background-position: -64px -160px;
+}
+
+.sprite-silk-tag_yellow {
+	@include sprite-silk;
+	background-position: -80px -160px;
+}
+
+.sprite-silk-tag_red {
+	@include sprite-silk;
+	background-position: -96px -160px;
+}
+
+.sprite-silk-tag_purple {
+	@include sprite-silk;
+	background-position: -112px -160px;
+}
+
+.sprite-silk-tag_pink {
+	@include sprite-silk;
+	background-position: -128px -160px;
+}
+
+.sprite-silk-tag_orange {
+	@include sprite-silk;
+	background-position: -144px -160px;
+}
+
+.sprite-silk-tag_green {
+	@include sprite-silk;
+	background-position: -160px -160px;
+}
+
+.sprite-silk-tag_blue_edit {
+	@include sprite-silk;
+	background-position: -176px 0px;
+}
+
+.sprite-silk-tag_blue_delete {
+	@include sprite-silk;
+	background-position: -176px -16px;
+}
+
+.sprite-silk-tag_blue_add {
+	@include sprite-silk;
+	background-position: -176px -32px;
+}
+
+.sprite-silk-tag_blue {
+	@include sprite-silk;
+	background-position: -176px -48px;
+}
+
+.sprite-silk-tag {
+	@include sprite-silk;
+	background-position: -176px -64px;
+}
+
+.sprite-silk-table_sort {
+	@include sprite-silk;
+	background-position: -176px -80px;
+}
+
+.sprite-silk-table_save {
+	@include sprite-silk;
+	background-position: -176px -96px;
+}
+
+.sprite-silk-table_row_insert {
+	@include sprite-silk;
+	background-position: -176px -112px;
+}
+
+.sprite-silk-table_row_delete {
+	@include sprite-silk;
+	background-position: -176px -128px;
+}
+
+.sprite-silk-table_relationship {
+	@include sprite-silk;
+	background-position: -176px -144px;
+}
+
+.sprite-silk-table_refresh {
+	@include sprite-silk;
+	background-position: -176px -160px;
+}
+
+.sprite-silk-table_multiple {
+	@include sprite-silk;
+	background-position: 0px -176px;
+}
+
+.sprite-silk-table:link {
+	@include sprite-silk;
+	background-position: -16px -176px;
+}
+
+.sprite-silk-table_lightning {
+	@include sprite-silk;
+	background-position: -32px -176px;
+}
+
+.sprite-silk-table_key {
+	@include sprite-silk;
+	background-position: -48px -176px;
+}
+
+.sprite-silk-table_go {
+	@include sprite-silk;
+	background-position: -64px -176px;
+}
+
+.sprite-silk-table_gear {
+	@include sprite-silk;
+	background-position: -80px -176px;
+}
+
+.sprite-silk-table_error {
+	@include sprite-silk;
+	background-position: -96px -176px;
+}
+
+.sprite-silk-table_edit {
+	@include sprite-silk;
+	background-position: -112px -176px;
+}
+
+.sprite-silk-table_delete {
+	@include sprite-silk;
+	background-position: -128px -176px;
+}
+
+.sprite-silk-table_add {
+	@include sprite-silk;
+	background-position: -144px -176px;
+}
+
+.sprite-silk-table {
+	@include sprite-silk;
+	background-position: -160px -176px;
+}
+
+.sprite-silk-tab_go {
+	@include sprite-silk;
+	background-position: -176px -176px;
+}
+
+.sprite-silk-tab_edit {
+	@include sprite-silk;
+	background-position: -192px 0px;
+}
+
+.sprite-silk-tab_delete {
+	@include sprite-silk;
+	background-position: -192px -16px;
+}
+
+.sprite-silk-tab_add {
+	@include sprite-silk;
+	background-position: -192px -32px;
+}
+
+.sprite-silk-tab {
+	@include sprite-silk;
+	background-position: -192px -48px;
+}
+
+.sprite-silk-sum {
+	@include sprite-silk;
+	background-position: -192px -64px;
+}
+
+.sprite-silk-style_go {
+	@include sprite-silk;
+	background-position: -192px -80px;
+}
+
+.sprite-silk-style_edit {
+	@include sprite-silk;
+	background-position: -192px -96px;
+}
+
+.sprite-silk-style_delete {
+	@include sprite-silk;
+	background-position: -192px -112px;
+}
+
+.sprite-silk-style_add {
+	@include sprite-silk;
+	background-position: -192px -128px;
+}
+
+.sprite-silk-style {
+	@include sprite-silk;
+	background-position: -192px -144px;
+}
+
+.sprite-silk-stop {
+	@include sprite-silk;
+	background-position: -192px -160px;
+}
+
+.sprite-silk-status_online {
+	@include sprite-silk;
+	background-position: -192px -176px;
+}
+
+.sprite-silk-status_offline {
+	@include sprite-silk;
+	background-position: 0px -192px;
+}
+
+.sprite-silk-status_busy {
+	@include sprite-silk;
+	background-position: -16px -192px;
+}
+
+.sprite-silk-status_away {
+	@include sprite-silk;
+	background-position: -32px -192px;
+}
+
+.sprite-silk-star {
+	@include sprite-silk;
+	background-position: -48px -192px;
+}
+
+.sprite-silk-sport_tennis {
+	@include sprite-silk;
+	background-position: -64px -192px;
+}
+
+.sprite-silk-sport_soccer {
+	@include sprite-silk;
+	background-position: -80px -192px;
+}
+
+.sprite-silk-sport_shuttlecock {
+	@include sprite-silk;
+	background-position: -96px -192px;
+}
+
+.sprite-silk-sport_raquet {
+	@include sprite-silk;
+	background-position: -112px -192px;
+}
+
+.sprite-silk-sport_golf {
+	@include sprite-silk;
+	background-position: -128px -192px;
+}
+
+.sprite-silk-sport_football {
+	@include sprite-silk;
+	background-position: -144px -192px;
+}
+
+.sprite-silk-sport_basketball {
+	@include sprite-silk;
+	background-position: -160px -192px;
+}
+
+.sprite-silk-sport_8ball {
+	@include sprite-silk;
+	background-position: -176px -192px;
+}
+
+.sprite-silk-spellcheck {
+	@include sprite-silk;
+	background-position: -192px -192px;
+}
+
+.sprite-silk-sound_none {
+	@include sprite-silk;
+	background-position: -208px 0px;
+}
+
+.sprite-silk-sound_mute {
+	@include sprite-silk;
+	background-position: -208px -16px;
+}
+
+.sprite-silk-sound_low {
+	@include sprite-silk;
+	background-position: -208px -32px;
+}
+
+.sprite-silk-sound_delete {
+	@include sprite-silk;
+	background-position: -208px -48px;
+}
+
+.sprite-silk-sound_add {
+	@include sprite-silk;
+	background-position: -208px -64px;
+}
+
+.sprite-silk-sound {
+	@include sprite-silk;
+	background-position: -208px -80px;
+}
+
+.sprite-silk-sitemap_color {
+	@include sprite-silk;
+	background-position: -208px -96px;
+}
+
+.sprite-silk-sitemap {
+	@include sprite-silk;
+	background-position: -208px -112px;
+}
+
+.sprite-silk-shield_go {
+	@include sprite-silk;
+	background-position: -208px -128px;
+}
+
+.sprite-silk-shield_delete {
+	@include sprite-silk;
+	background-position: -208px -144px;
+}
+
+.sprite-silk-shield_add {
+	@include sprite-silk;
+	background-position: -208px -160px;
+}
+
+.sprite-silk-shield {
+	@include sprite-silk;
+	background-position: -208px -176px;
+}
+
+.sprite-silk-shape_ungroup {
+	@include sprite-silk;
+	background-position: -208px -192px;
+}
+
+.sprite-silk-shape_square:link {
+	@include sprite-silk;
+	background-position: 0px -208px;
+}
+
+.sprite-silk-shape_square_key {
+	@include sprite-silk;
+	background-position: -16px -208px;
+}
+
+.sprite-silk-shape_square_go {
+	@include sprite-silk;
+	background-position: -32px -208px;
+}
+
+.sprite-silk-shape_square_error {
+	@include sprite-silk;
+	background-position: -48px -208px;
+}
+
+.sprite-silk-shape_square_edit {
+	@include sprite-silk;
+	background-position: -64px -208px;
+}
+
+.sprite-silk-shape_square_delete {
+	@include sprite-silk;
+	background-position: -80px -208px;
+}
+
+.sprite-silk-shape_square_add {
+	@include sprite-silk;
+	background-position: -96px -208px;
+}
+
+.sprite-silk-shape_square {
+	@include sprite-silk;
+	background-position: -112px -208px;
+}
+
+.sprite-silk-shape_rotate_clockwise {
+	@include sprite-silk;
+	background-position: -128px -208px;
+}
+
+.sprite-silk-shape_rotate_anticlockwise {
+	@include sprite-silk;
+	background-position: -144px -208px;
+}
+
+.sprite-silk-shape_move_front {
+	@include sprite-silk;
+	background-position: -160px -208px;
+}
+
+.sprite-silk-shape_move_forwards {
+	@include sprite-silk;
+	background-position: -176px -208px;
+}
+
+.sprite-silk-shape_move_backwards {
+	@include sprite-silk;
+	background-position: -192px -208px;
+}
+
+.sprite-silk-shape_move_back {
+	@include sprite-silk;
+	background-position: -208px -208px;
+}
+
+.sprite-silk-shape_handles {
+	@include sprite-silk;
+	background-position: -224px 0px;
+}
+
+.sprite-silk-shape_group {
+	@include sprite-silk;
+	background-position: -224px -16px;
+}
+
+.sprite-silk-shape_flip_vertical {
+	@include sprite-silk;
+	background-position: -224px -32px;
+}
+
+.sprite-silk-shape_flip_horizontal {
+	@include sprite-silk;
+	background-position: -224px -48px;
+}
+
+.sprite-silk-shape_align_top {
+	@include sprite-silk;
+	background-position: -224px -64px;
+}
+
+.sprite-silk-shape_align_right {
+	@include sprite-silk;
+	background-position: -224px -80px;
+}
+
+.sprite-silk-shape_align_middle {
+	@include sprite-silk;
+	background-position: -224px -96px;
+}
+
+.sprite-silk-shape_align_left {
+	@include sprite-silk;
+	background-position: -224px -112px;
+}
+
+.sprite-silk-shape_align_center {
+	@include sprite-silk;
+	background-position: -224px -128px;
+}
+
+.sprite-silk-shape_align_bottom {
+	@include sprite-silk;
+	background-position: -224px -144px;
+}
+
+.sprite-silk-shading {
+	@include sprite-silk;
+	background-position: -224px -160px;
+}
+
+.sprite-silk-server_uncompressed {
+	@include sprite-silk;
+	background-position: -224px -176px;
+}
+
+.sprite-silk-server:link {
+	@include sprite-silk;
+	background-position: -224px -192px;
+}
+
+.sprite-silk-server_lightning {
+	@include sprite-silk;
+	background-position: -224px -208px;
+}
+
+.sprite-silk-server_key {
+	@include sprite-silk;
+	background-position: 0px -224px;
+}
+
+.sprite-silk-server_go {
+	@include sprite-silk;
+	background-position: -16px -224px;
+}
+
+.sprite-silk-server_error {
+	@include sprite-silk;
+	background-position: -32px -224px;
+}
+
+.sprite-silk-server_edit {
+	@include sprite-silk;
+	background-position: -48px -224px;
+}
+
+.sprite-silk-server_delete {
+	@include sprite-silk;
+	background-position: -64px -224px;
+}
+
+.sprite-silk-server_database {
+	@include sprite-silk;
+	background-position: -80px -224px;
+}
+
+.sprite-silk-server_connect {
+	@include sprite-silk;
+	background-position: -96px -224px;
+}
+
+.sprite-silk-server_compressed {
+	@include sprite-silk;
+	background-position: -112px -224px;
+}
+
+.sprite-silk-server_chart {
+	@include sprite-silk;
+	background-position: -128px -224px;
+}
+
+.sprite-silk-server_add {
+	@include sprite-silk;
+	background-position: -144px -224px;
+}
+
+.sprite-silk-server {
+	@include sprite-silk;
+	background-position: -160px -224px;
+}
+
+.sprite-silk-script_save {
+	@include sprite-silk;
+	background-position: -176px -224px;
+}
+
+.sprite-silk-script_palette {
+	@include sprite-silk;
+	background-position: -192px -224px;
+}
+
+.sprite-silk-script:link {
+	@include sprite-silk;
+	background-position: -208px -224px;
+}
+
+.sprite-silk-script_lightning {
+	@include sprite-silk;
+	background-position: -224px -224px;
+}
+
+.sprite-silk-script_key {
+	@include sprite-silk;
+	background-position: -240px 0px;
+}
+
+.sprite-silk-script_go {
+	@include sprite-silk;
+	background-position: -240px -16px;
+}
+
+.sprite-silk-script_gear {
+	@include sprite-silk;
+	background-position: -240px -32px;
+}
+
+.sprite-silk-script_error {
+	@include sprite-silk;
+	background-position: -240px -48px;
+}
+
+.sprite-silk-script_edit {
+	@include sprite-silk;
+	background-position: -240px -64px;
+}
+
+.sprite-silk-script_delete {
+	@include sprite-silk;
+	background-position: -240px -80px;
+}
+
+.sprite-silk-script_code_red {
+	@include sprite-silk;
+	background-position: -240px -96px;
+}
+
+.sprite-silk-script_code {
+	@include sprite-silk;
+	background-position: -240px -112px;
+}
+
+.sprite-silk-script_add {
+	@include sprite-silk;
+	background-position: -240px -128px;
+}
+
+.sprite-silk-script {
+	@include sprite-silk;
+	background-position: -240px -144px;
+}
+
+.sprite-silk-ruby_put {
+	@include sprite-silk;
+	background-position: -240px -160px;
+}
+
+.sprite-silk-ruby:link {
+	@include sprite-silk;
+	background-position: -240px -176px;
+}
+
+.sprite-silk-ruby_key {
+	@include sprite-silk;
+	background-position: -240px -192px;
+}
+
+.sprite-silk-ruby_go {
+	@include sprite-silk;
+	background-position: -240px -208px;
+}
+
+.sprite-silk-ruby_get {
+	@include sprite-silk;
+	background-position: -240px -224px;
+}
+
+.sprite-silk-ruby_gear {
+	@include sprite-silk;
+	background-position: 0px -240px;
+}
+
+.sprite-silk-ruby_delete {
+	@include sprite-silk;
+	background-position: -16px -240px;
+}
+
+.sprite-silk-ruby_add {
+	@include sprite-silk;
+	background-position: -32px -240px;
+}
+
+.sprite-silk-ruby {
+	@include sprite-silk;
+	background-position: -48px -240px;
+}
+
+.sprite-silk-rss_valid {
+	@include sprite-silk;
+	background-position: -64px -240px;
+}
+
+.sprite-silk-rss_go {
+	@include sprite-silk;
+	background-position: -80px -240px;
+}
+
+.sprite-silk-rss_delete {
+	@include sprite-silk;
+	background-position: -96px -240px;
+}
+
+.sprite-silk-rss_add {
+	@include sprite-silk;
+	background-position: -112px -240px;
+}
+
+.sprite-silk-rss {
+	@include sprite-silk;
+	background-position: -128px -240px;
+}
+
+.sprite-silk-rosette {
+	@include sprite-silk;
+	background-position: -144px -240px;
+}
+
+.sprite-silk-resultset_previous {
+	@include sprite-silk;
+	background-position: -160px -240px;
+}
+
+.sprite-silk-resultset_next {
+	@include sprite-silk;
+	background-position: -176px -240px;
+}
+
+.sprite-silk-resultset_last {
+	@include sprite-silk;
+	background-position: -192px -240px;
+}
+
+.sprite-silk-resultset_first {
+	@include sprite-silk;
+	background-position: -208px -240px;
+}
+
+.sprite-silk-report_word {
+	@include sprite-silk;
+	background-position: -224px -240px;
+}
+
+.sprite-silk-report_user {
+	@include sprite-silk;
+	background-position: -240px -240px;
+}
+
+.sprite-silk-report_picture {
+	@include sprite-silk;
+	background-position: -256px 0px;
+}
+
+.sprite-silk-report_magnify {
+	@include sprite-silk;
+	background-position: -256px -16px;
+}
+
+.sprite-silk-report:link {
+	@include sprite-silk;
+	background-position: -256px -32px;
+}
+
+.sprite-silk-report_key {
+	@include sprite-silk;
+	background-position: -256px -48px;
+}
+
+.sprite-silk-report_go {
+	@include sprite-silk;
+	background-position: -256px -64px;
+}
+
+.sprite-silk-report_edit {
+	@include sprite-silk;
+	background-position: -256px -80px;
+}
+
+.sprite-silk-report_disk {
+	@include sprite-silk;
+	background-position: -256px -96px;
+}
+
+.sprite-silk-report_delete {
+	@include sprite-silk;
+	background-position: -256px -112px;
+}
+
+.sprite-silk-report_add {
+	@include sprite-silk;
+	background-position: -256px -128px;
+}
+
+.sprite-silk-report {
+	@include sprite-silk;
+	background-position: -256px -144px;
+}
+
+.sprite-silk-rainbow {
+	@include sprite-silk;
+	background-position: -256px -160px;
+}
+
+.sprite-silk-printer_error {
+	@include sprite-silk;
+	background-position: -256px -176px;
+}
+
+.sprite-silk-printer_empty {
+	@include sprite-silk;
+	background-position: -256px -192px;
+}
+
+.sprite-silk-printer_delete {
+	@include sprite-silk;
+	background-position: -256px -208px;
+}
+
+.sprite-silk-printer_add {
+	@include sprite-silk;
+	background-position: -256px -224px;
+}
+
+.sprite-silk-printer {
+	@include sprite-silk;
+	background-position: -256px -240px;
+}
+
+.sprite-silk-plugin:link {
+	@include sprite-silk;
+	background-position: 0px -256px;
+}
+
+.sprite-silk-plugin_go {
+	@include sprite-silk;
+	background-position: -16px -256px;
+}
+
+.sprite-silk-plugin_error {
+	@include sprite-silk;
+	background-position: -32px -256px;
+}
+
+.sprite-silk-plugin_edit {
+	@include sprite-silk;
+	background-position: -48px -256px;
+}
+
+.sprite-silk-plugin_disabled {
+	@include sprite-silk;
+	background-position: -64px -256px;
+}
+
+.sprite-silk-plugin_delete {
+	@include sprite-silk;
+	background-position: -80px -256px;
+}
+
+.sprite-silk-plugin_add {
+	@include sprite-silk;
+	background-position: -96px -256px;
+}
+
+.sprite-silk-plugin {
+	@include sprite-silk;
+	background-position: -112px -256px;
+}
+
+.sprite-silk-pill_go {
+	@include sprite-silk;
+	background-position: -128px -256px;
+}
+
+.sprite-silk-pill_delete {
+	@include sprite-silk;
+	background-position: -144px -256px;
+}
+
+.sprite-silk-pill_add {
+	@include sprite-silk;
+	background-position: -160px -256px;
+}
+
+.sprite-silk-pill {
+	@include sprite-silk;
+	background-position: -176px -256px;
+}
+
+.sprite-silk-pilcrow {
+	@include sprite-silk;
+	background-position: -192px -256px;
+}
+
+.sprite-silk-pictures {
+	@include sprite-silk;
+	background-position: -208px -256px;
+}
+
+.sprite-silk-picture_save {
+	@include sprite-silk;
+	background-position: -224px -256px;
+}
+
+.sprite-silk-picture:link {
+	@include sprite-silk;
+	background-position: -240px -256px;
+}
+
+.sprite-silk-picture_key {
+	@include sprite-silk;
+	background-position: -256px -256px;
+}
+
+.sprite-silk-picture_go {
+	@include sprite-silk;
+	background-position: -272px 0px;
+}
+
+.sprite-silk-picture_error {
+	@include sprite-silk;
+	background-position: -272px -16px;
+}
+
+.sprite-silk-picture_empty {
+	@include sprite-silk;
+	background-position: -272px -32px;
+}
+
+.sprite-silk-picture_edit {
+	@include sprite-silk;
+	background-position: -272px -48px;
+}
+
+.sprite-silk-picture_delete {
+	@include sprite-silk;
+	background-position: -272px -64px;
+}
+
+.sprite-silk-picture_add {
+	@include sprite-silk;
+	background-position: -272px -80px;
+}
+
+.sprite-silk-picture {
+	@include sprite-silk;
+	background-position: -272px -96px;
+}
+
+.sprite-silk-photos {
+	@include sprite-silk;
+	background-position: -272px -112px;
+}
+
+.sprite-silk-photo:link {
+	@include sprite-silk;
+	background-position: -272px -128px;
+}
+
+.sprite-silk-photo_delete {
+	@include sprite-silk;
+	background-position: -272px -144px;
+}
+
+.sprite-silk-photo_add {
+	@include sprite-silk;
+	background-position: -272px -160px;
+}
+
+.sprite-silk-photo {
+	@include sprite-silk;
+	background-position: -272px -176px;
+}
+
+.sprite-silk-phone_sound {
+	@include sprite-silk;
+	background-position: -272px -192px;
+}
+
+.sprite-silk-phone_delete {
+	@include sprite-silk;
+	background-position: -272px -208px;
+}
+
+.sprite-silk-phone_add {
+	@include sprite-silk;
+	background-position: -272px -224px;
+}
+
+.sprite-silk-phone {
+	@include sprite-silk;
+	background-position: -272px -240px;
+}
+
+.sprite-silk-pencil_go {
+	@include sprite-silk;
+	background-position: -272px -256px;
+}
+
+.sprite-silk-pencil_delete {
+	@include sprite-silk;
+	background-position: 0px -272px;
+}
+
+.sprite-silk-pencil_add {
+	@include sprite-silk;
+	background-position: -16px -272px;
+}
+
+.sprite-silk-pencil {
+	@include sprite-silk;
+	background-position: -32px -272px;
+}
+
+.sprite-silk-paste_word {
+	@include sprite-silk;
+	background-position: -48px -272px;
+}
+
+.sprite-silk-paste_plain {
+	@include sprite-silk;
+	background-position: -64px -272px;
+}
+
+.sprite-silk-palette {
+	@include sprite-silk;
+	background-position: -80px -272px;
+}
+
+.sprite-silk-paintcan {
+	@include sprite-silk;
+	background-position: -96px -272px;
+}
+
+.sprite-silk-paintbrush {
+	@include sprite-silk;
+	background-position: -112px -272px;
+}
+
+.sprite-silk-page_world {
+	@include sprite-silk;
+	background-position: -128px -272px;
+}
+
+.sprite-silk-page_word {
+	@include sprite-silk;
+	background-position: -144px -272px;
+}
+
+.sprite-silk-page_white_zip {
+	@include sprite-silk;
+	background-position: -160px -272px;
+}
+
+.sprite-silk-page_white_wrench {
+	@include sprite-silk;
+	background-position: -176px -272px;
+}
+
+.sprite-silk-page_white_world {
+	@include sprite-silk;
+	background-position: -192px -272px;
+}
+
+.sprite-silk-page_white_word {
+	@include sprite-silk;
+	background-position: -208px -272px;
+}
+
+.sprite-silk-page_white_width {
+	@include sprite-silk;
+	background-position: -224px -272px;
+}
+
+.sprite-silk-page_white_visualstudio {
+	@include sprite-silk;
+	background-position: -240px -272px;
+}
+
+.sprite-silk-page_white_vector {
+	@include sprite-silk;
+	background-position: -256px -272px;
+}
+
+.sprite-silk-page_white_tux {
+	@include sprite-silk;
+	background-position: -272px -272px;
+}
+
+.sprite-silk-page_white_text_width {
+	@include sprite-silk;
+	background-position: -288px 0px;
+}
+
+.sprite-silk-page_white_text {
+	@include sprite-silk;
+	background-position: -288px -16px;
+}
+
+.sprite-silk-page_white_swoosh {
+	@include sprite-silk;
+	background-position: -288px -32px;
+}
+
+.sprite-silk-page_white_star {
+	@include sprite-silk;
+	background-position: -288px -48px;
+}
+
+.sprite-silk-page_white_stack {
+	@include sprite-silk;
+	background-position: -288px -64px;
+}
+
+.sprite-silk-page_white_ruby {
+	@include sprite-silk;
+	background-position: -288px -80px;
+}
+
+.sprite-silk-page_white_put {
+	@include sprite-silk;
+	background-position: -288px -96px;
+}
+
+.sprite-silk-page_white_powerpoint {
+	@include sprite-silk;
+	background-position: -288px -112px;
+}
+
+.sprite-silk-page_white_picture {
+	@include sprite-silk;
+	background-position: -288px -128px;
+}
+
+.sprite-silk-page_white_php {
+	@include sprite-silk;
+	background-position: -288px -144px;
+}
+
+.sprite-silk-page_white_paste {
+	@include sprite-silk;
+	background-position: -288px -160px;
+}
+
+.sprite-silk-page_white_paintbrush {
+	@include sprite-silk;
+	background-position: -288px -176px;
+}
+
+.sprite-silk-page_white_paint {
+	@include sprite-silk;
+	background-position: -288px -192px;
+}
+
+.sprite-silk-page_white_office {
+	@include sprite-silk;
+	background-position: -288px -208px;
+}
+
+.sprite-silk-page_white_medal {
+	@include sprite-silk;
+	background-position: -288px -224px;
+}
+
+.sprite-silk-page_white_magnify {
+	@include sprite-silk;
+	background-position: -288px -240px;
+}
+
+.sprite-silk-page_white:link {
+	@include sprite-silk;
+	background-position: -288px -256px;
+}
+
+.sprite-silk-page_white_lightning {
+	@include sprite-silk;
+	background-position: -288px -272px;
+}
+
+.sprite-silk-page_white_key {
+	@include sprite-silk;
+	background-position: 0px -288px;
+}
+
+.sprite-silk-page_white_horizontal {
+	@include sprite-silk;
+	background-position: -16px -288px;
+}
+
+.sprite-silk-page_white_h {
+	@include sprite-silk;
+	background-position: -32px -288px;
+}
+
+.sprite-silk-page_white_go {
+	@include sprite-silk;
+	background-position: -48px -288px;
+}
+
+.sprite-silk-page_white_get {
+	@include sprite-silk;
+	background-position: -64px -288px;
+}
+
+.sprite-silk-page_white_gear {
+	@include sprite-silk;
+	background-position: -80px -288px;
+}
+
+.sprite-silk-page_white_freehand {
+	@include sprite-silk;
+	background-position: -96px -288px;
+}
+
+.sprite-silk-page_white_flash {
+	@include sprite-silk;
+	background-position: -112px -288px;
+}
+
+.sprite-silk-page_white_find {
+	@include sprite-silk;
+	background-position: -128px -288px;
+}
+
+.sprite-silk-page_white_excel {
+	@include sprite-silk;
+	background-position: -144px -288px;
+}
+
+.sprite-silk-page_white_error {
+	@include sprite-silk;
+	background-position: -160px -288px;
+}
+
+.sprite-silk-page_white_edit {
+	@include sprite-silk;
+	background-position: -176px -288px;
+}
+
+.sprite-silk-page_white_dvd {
+	@include sprite-silk;
+	background-position: -192px -288px;
+}
+
+.sprite-silk-page_white_delete {
+	@include sprite-silk;
+	background-position: -208px -288px;
+}
+
+.sprite-silk-page_white_database {
+	@include sprite-silk;
+	background-position: -224px -288px;
+}
+
+.sprite-silk-page_white_cup {
+	@include sprite-silk;
+	background-position: -240px -288px;
+}
+
+.sprite-silk-page_white_csharp {
+	@include sprite-silk;
+	background-position: -256px -288px;
+}
+
+.sprite-silk-page_white_cplusplus {
+	@include sprite-silk;
+	background-position: -272px -288px;
+}
+
+.sprite-silk-page_white_copy {
+	@include sprite-silk;
+	background-position: -288px -288px;
+}
+
+.sprite-silk-page_white_compressed {
+	@include sprite-silk;
+	background-position: -304px 0px;
+}
+
+.sprite-silk-page_white_coldfusion {
+	@include sprite-silk;
+	background-position: -304px -16px;
+}
+
+.sprite-silk-page_white_code_red {
+	@include sprite-silk;
+	background-position: -304px -32px;
+}
+
+.sprite-silk-page_white_code {
+	@include sprite-silk;
+	background-position: -304px -48px;
+}
+
+.sprite-silk-page_white_cd {
+	@include sprite-silk;
+	background-position: -304px -64px;
+}
+
+.sprite-silk-page_white_camera {
+	@include sprite-silk;
+	background-position: -304px -80px;
+}
+
+.sprite-silk-page_white_c {
+	@include sprite-silk;
+	background-position: -304px -96px;
+}
+
+.sprite-silk-page_white_add {
+	@include sprite-silk;
+	background-position: -304px -112px;
+}
+
+.sprite-silk-page_white_actionscript {
+	@include sprite-silk;
+	background-position: -304px -128px;
+}
+
+.sprite-silk-page_white_acrobat {
+	@include sprite-silk;
+	background-position: -304px -144px;
+}
+
+.sprite-silk-page_white {
+	@include sprite-silk;
+	background-position: -304px -160px;
+}
+
+.sprite-silk-page_save {
+	@include sprite-silk;
+	background-position: -304px -176px;
+}
+
+.sprite-silk-page_refresh {
+	@include sprite-silk;
+	background-position: -304px -192px;
+}
+
+.sprite-silk-page_red {
+	@include sprite-silk;
+	background-position: -304px -208px;
+}
+
+.sprite-silk-page_paste {
+	@include sprite-silk;
+	background-position: -304px -224px;
+}
+
+.sprite-silk-page_paintbrush {
+	@include sprite-silk;
+	background-position: -304px -240px;
+}
+
+.sprite-silk-page:link {
+	@include sprite-silk;
+	background-position: -304px -256px;
+}
+
+.sprite-silk-page_lightning {
+	@include sprite-silk;
+	background-position: -304px -272px;
+}
+
+.sprite-silk-page_key {
+	@include sprite-silk;
+	background-position: -304px -288px;
+}
+
+.sprite-silk-page_green {
+	@include sprite-silk;
+	background-position: 0px -304px;
+}
+
+.sprite-silk-page_go {
+	@include sprite-silk;
+	background-position: -16px -304px;
+}
+
+.sprite-silk-page_gear {
+	@include sprite-silk;
+	background-position: -32px -304px;
+}
+
+.sprite-silk-page_find {
+	@include sprite-silk;
+	background-position: -48px -304px;
+}
+
+.sprite-silk-page_excel {
+	@include sprite-silk;
+	background-position: -64px -304px;
+}
+
+.sprite-silk-page_error {
+	@include sprite-silk;
+	background-position: -80px -304px;
+}
+
+.sprite-silk-page_edit {
+	@include sprite-silk;
+	background-position: -96px -304px;
+}
+
+.sprite-silk-page_delete {
+	@include sprite-silk;
+	background-position: -112px -304px;
+}
+
+.sprite-silk-page_copy {
+	@include sprite-silk;
+	background-position: -128px -304px;
+}
+
+.sprite-silk-page_code {
+	@include sprite-silk;
+	background-position: -144px -304px;
+}
+
+.sprite-silk-page_attach {
+	@include sprite-silk;
+	background-position: -160px -304px;
+}
+
+.sprite-silk-page_add {
+	@include sprite-silk;
+	background-position: -176px -304px;
+}
+
+.sprite-silk-page {
+	@include sprite-silk;
+	background-position: -192px -304px;
+}
+
+.sprite-silk-package:link {
+	@include sprite-silk;
+	background-position: -208px -304px;
+}
+
+.sprite-silk-package_green {
+	@include sprite-silk;
+	background-position: -224px -304px;
+}
+
+.sprite-silk-package_go {
+	@include sprite-silk;
+	background-position: -240px -304px;
+}
+
+.sprite-silk-package_delete {
+	@include sprite-silk;
+	background-position: -256px -304px;
+}
+
+.sprite-silk-package_add {
+	@include sprite-silk;
+	background-position: -272px -304px;
+}
+
+.sprite-silk-package {
+	@include sprite-silk;
+	background-position: -288px -304px;
+}
+
+.sprite-silk-overlays {
+	@include sprite-silk;
+	background-position: -304px -304px;
+}
+
+.sprite-silk-note_go {
+	@include sprite-silk;
+	background-position: -320px 0px;
+}
+
+.sprite-silk-note_error {
+	@include sprite-silk;
+	background-position: -320px -16px;
+}
+
+.sprite-silk-note_edit {
+	@include sprite-silk;
+	background-position: -320px -32px;
+}
+
+.sprite-silk-note_delete {
+	@include sprite-silk;
+	background-position: -320px -48px;
+}
+
+.sprite-silk-note_add {
+	@include sprite-silk;
+	background-position: -320px -64px;
+}
+
+.sprite-silk-note {
+	@include sprite-silk;
+	background-position: -320px -80px;
+}
+
+.sprite-silk-newspaper:link {
+	@include sprite-silk;
+	background-position: -320px -96px;
+}
+
+.sprite-silk-newspaper_go {
+	@include sprite-silk;
+	background-position: -320px -112px;
+}
+
+.sprite-silk-newspaper_delete {
+	@include sprite-silk;
+	background-position: -320px -128px;
+}
+
+.sprite-silk-newspaper_add {
+	@include sprite-silk;
+	background-position: -320px -144px;
+}
+
+.sprite-silk-newspaper {
+	@include sprite-silk;
+	background-position: -320px -160px;
+}
+
+.sprite-silk-new {
+	@include sprite-silk;
+	background-position: -320px -176px;
+}
+
+.sprite-silk-music {
+	@include sprite-silk;
+	background-position: -320px -192px;
+}
+
+.sprite-silk-mouse_error {
+	@include sprite-silk;
+	background-position: -320px -208px;
+}
+
+.sprite-silk-mouse_delete {
+	@include sprite-silk;
+	background-position: -320px -224px;
+}
+
+.sprite-silk-mouse_add {
+	@include sprite-silk;
+	background-position: -320px -240px;
+}
+
+.sprite-silk-mouse {
+	@include sprite-silk;
+	background-position: -320px -256px;
+}
+
+.sprite-silk-monitor:link {
+	@include sprite-silk;
+	background-position: -320px -272px;
+}
+
+.sprite-silk-monitor_lightning {
+	@include sprite-silk;
+	background-position: -320px -288px;
+}
+
+.sprite-silk-monitor_go {
+	@include sprite-silk;
+	background-position: -320px -304px;
+}
+
+.sprite-silk-monitor_error {
+	@include sprite-silk;
+	background-position: 0px -320px;
+}
+
+.sprite-silk-monitor_edit {
+	@include sprite-silk;
+	background-position: -16px -320px;
+}
+
+.sprite-silk-monitor_delete {
+	@include sprite-silk;
+	background-position: -32px -320px;
+}
+
+.sprite-silk-monitor_add {
+	@include sprite-silk;
+	background-position: -48px -320px;
+}
+
+.sprite-silk-monitor {
+	@include sprite-silk;
+	background-position: -64px -320px;
+}
+
+.sprite-silk-money_yen {
+	@include sprite-silk;
+	background-position: -80px -320px;
+}
+
+.sprite-silk-money_pound {
+	@include sprite-silk;
+	background-position: -96px -320px;
+}
+
+.sprite-silk-money_euro {
+	@include sprite-silk;
+	background-position: -112px -320px;
+}
+
+.sprite-silk-money_dollar {
+	@include sprite-silk;
+	background-position: -128px -320px;
+}
+
+.sprite-silk-money_delete {
+	@include sprite-silk;
+	background-position: -144px -320px;
+}
+
+.sprite-silk-money_add {
+	@include sprite-silk;
+	background-position: -160px -320px;
+}
+
+.sprite-silk-money {
+	@include sprite-silk;
+	background-position: -176px -320px;
+}
+
+.sprite-silk-medal_silver_delete {
+	@include sprite-silk;
+	background-position: -192px -320px;
+}
+
+.sprite-silk-medal_silver_add {
+	@include sprite-silk;
+	background-position: -208px -320px;
+}
+
+.sprite-silk-medal_silver_3 {
+	@include sprite-silk;
+	background-position: -224px -320px;
+}
+
+.sprite-silk-medal_silver_2 {
+	@include sprite-silk;
+	background-position: -240px -320px;
+}
+
+.sprite-silk-medal_silver_1 {
+	@include sprite-silk;
+	background-position: -256px -320px;
+}
+
+.sprite-silk-medal_gold_delete {
+	@include sprite-silk;
+	background-position: -272px -320px;
+}
+
+.sprite-silk-medal_gold_add {
+	@include sprite-silk;
+	background-position: -288px -320px;
+}
+
+.sprite-silk-medal_gold_3 {
+	@include sprite-silk;
+	background-position: -304px -320px;
+}
+
+.sprite-silk-medal_gold_2 {
+	@include sprite-silk;
+	background-position: -320px -320px;
+}
+
+.sprite-silk-medal_gold_1 {
+	@include sprite-silk;
+	background-position: -336px 0px;
+}
+
+.sprite-silk-medal_bronze_delete {
+	@include sprite-silk;
+	background-position: -336px -16px;
+}
+
+.sprite-silk-medal_bronze_add {
+	@include sprite-silk;
+	background-position: -336px -32px;
+}
+
+.sprite-silk-medal_bronze_3 {
+	@include sprite-silk;
+	background-position: -336px -48px;
+}
+
+.sprite-silk-medal_bronze_2 {
+	@include sprite-silk;
+	background-position: -336px -64px;
+}
+
+.sprite-silk-medal_bronze_1 {
+	@include sprite-silk;
+	background-position: -336px -80px;
+}
+
+.sprite-silk-map_magnify {
+	@include sprite-silk;
+	background-position: -336px -96px;
+}
+
+.sprite-silk-map_go {
+	@include sprite-silk;
+	background-position: -336px -112px;
+}
+
+.sprite-silk-map_edit {
+	@include sprite-silk;
+	background-position: -336px -128px;
+}
+
+.sprite-silk-map_delete {
+	@include sprite-silk;
+	background-position: -336px -144px;
+}
+
+.sprite-silk-map_add {
+	@include sprite-silk;
+	background-position: -336px -160px;
+}
+
+.sprite-silk-map {
+	@include sprite-silk;
+	background-position: -336px -176px;
+}
+
+.sprite-silk-male {
+	@include sprite-silk;
+	background-position: -336px -192px;
+}
+
+.sprite-silk-magnifier_zoom_in {
+	@include sprite-silk;
+	background-position: -336px -208px;
+}
+
+.sprite-silk-magnifier {
+	@include sprite-silk;
+	background-position: -336px -224px;
+}
+
+.sprite-silk-magifier_zoom_out {
+	@include sprite-silk;
+	background-position: -336px -240px;
+}
+
+.sprite-silk-lorry:link {
+	@include sprite-silk;
+	background-position: -336px -256px;
+}
+
+.sprite-silk-lorry_go {
+	@include sprite-silk;
+	background-position: -336px -272px;
+}
+
+.sprite-silk-lorry_flatbed {
+	@include sprite-silk;
+	background-position: -336px -288px;
+}
+
+.sprite-silk-lorry_error {
+	@include sprite-silk;
+	background-position: -336px -304px;
+}
+
+.sprite-silk-lorry_delete {
+	@include sprite-silk;
+	background-position: -336px -320px;
+}
+
+.sprite-silk-lorry_add {
+	@include sprite-silk;
+	background-position: 0px -336px;
+}
+
+.sprite-silk-lorry {
+	@include sprite-silk;
+	background-position: -16px -336px;
+}
+
+.sprite-silk-lock_open {
+	@include sprite-silk;
+	background-position: -32px -336px;
+}
+
+.sprite-silk-lock_go {
+	@include sprite-silk;
+	background-position: -48px -336px;
+}
+
+.sprite-silk-lock_edit {
+	@include sprite-silk;
+	background-position: -64px -336px;
+}
+
+.sprite-silk-lock_delete {
+	@include sprite-silk;
+	background-position: -80px -336px;
+}
+
+.sprite-silk-lock_break {
+	@include sprite-silk;
+	background-position: -96px -336px;
+}
+
+.sprite-silk-lock_add {
+	@include sprite-silk;
+	background-position: -112px -336px;
+}
+
+.sprite-silk-lock {
+	@include sprite-silk;
+	background-position: -128px -336px;
+}
+
+.sprite-silk-link_go:link {
+	@include sprite-silk;
+	background-position: -144px -336px;
+}
+
+.sprite-silk-link_error:link {
+	@include sprite-silk;
+	background-position: -160px -336px;
+}
+
+.sprite-silk-link_edit:link {
+	@include sprite-silk;
+	background-position: -176px -336px;
+}
+
+.sprite-silk-link_delete:link {
+	@include sprite-silk;
+	background-position: -192px -336px;
+}
+
+.sprite-silk-link_break:link {
+	@include sprite-silk;
+	background-position: -208px -336px;
+}
+
+.sprite-silk-link_add:link {
+	@include sprite-silk;
+	background-position: -224px -336px;
+}
+
+.sprite-silk-link:link {
+	@include sprite-silk;
+	background-position: -240px -336px;
+}
+
+.sprite-silk-lightning_go {
+	@include sprite-silk;
+	background-position: -256px -336px;
+}
+
+.sprite-silk-lightning_delete {
+	@include sprite-silk;
+	background-position: -272px -336px;
+}
+
+.sprite-silk-lightning_add {
+	@include sprite-silk;
+	background-position: -288px -336px;
+}
+
+.sprite-silk-lightning {
+	@include sprite-silk;
+	background-position: -304px -336px;
+}
+
+.sprite-silk-lightbulb_off {
+	@include sprite-silk;
+	background-position: -320px -336px;
+}
+
+.sprite-silk-lightbulb_delete {
+	@include sprite-silk;
+	background-position: -336px -336px;
+}
+
+.sprite-silk-lightbulb_add {
+	@include sprite-silk;
+	background-position: -352px 0px;
+}
+
+.sprite-silk-lightbulb {
+	@include sprite-silk;
+	background-position: -352px -16px;
+}
+
+.sprite-silk-layout_sidebar {
+	@include sprite-silk;
+	background-position: -352px -32px;
+}
+
+.sprite-silk-layout:link {
+	@include sprite-silk;
+	background-position: -352px -48px;
+}
+
+.sprite-silk-layout_header {
+	@include sprite-silk;
+	background-position: -352px -64px;
+}
+
+.sprite-silk-layout_error {
+	@include sprite-silk;
+	background-position: -352px -80px;
+}
+
+.sprite-silk-layout_edit {
+	@include sprite-silk;
+	background-position: -352px -96px;
+}
+
+.sprite-silk-layout_delete {
+	@include sprite-silk;
+	background-position: -352px -112px;
+}
+
+.sprite-silk-layout_content {
+	@include sprite-silk;
+	background-position: -352px -128px;
+}
+
+.sprite-silk-layout_add {
+	@include sprite-silk;
+	background-position: -352px -144px;
+}
+
+.sprite-silk-layout {
+	@include sprite-silk;
+	background-position: -352px -160px;
+}
+
+.sprite-silk-layers {
+	@include sprite-silk;
+	background-position: -352px -176px;
+}
+
+.sprite-silk-keyboard_magnify {
+	@include sprite-silk;
+	background-position: -352px -192px;
+}
+
+.sprite-silk-keyboard_delete {
+	@include sprite-silk;
+	background-position: -352px -208px;
+}
+
+.sprite-silk-keyboard_add {
+	@include sprite-silk;
+	background-position: -352px -224px;
+}
+
+.sprite-silk-keyboard {
+	@include sprite-silk;
+	background-position: -352px -240px;
+}
+
+.sprite-silk-key_go {
+	@include sprite-silk;
+	background-position: -352px -256px;
+}
+
+.sprite-silk-key_delete {
+	@include sprite-silk;
+	background-position: -352px -272px;
+}
+
+.sprite-silk-key_add {
+	@include sprite-silk;
+	background-position: -352px -288px;
+}
+
+.sprite-silk-key {
+	@include sprite-silk;
+	background-position: -352px -304px;
+}
+
+.sprite-silk-joystick_error {
+	@include sprite-silk;
+	background-position: -352px -320px;
+}
+
+.sprite-silk-joystick_delete {
+	@include sprite-silk;
+	background-position: -352px -336px;
+}
+
+.sprite-silk-joystick_add {
+	@include sprite-silk;
+	background-position: 0px -352px;
+}
+
+.sprite-silk-joystick {
+	@include sprite-silk;
+	background-position: -16px -352px;
+}
+
+.sprite-silk-ipod_sound {
+	@include sprite-silk;
+	background-position: -32px -352px;
+}
+
+.sprite-silk-ipod_cast_delete {
+	@include sprite-silk;
+	background-position: -48px -352px;
+}
+
+.sprite-silk-ipod_cast_add {
+	@include sprite-silk;
+	background-position: -64px -352px;
+}
+
+.sprite-silk-ipod_cast {
+	@include sprite-silk;
+	background-position: -80px -352px;
+}
+
+.sprite-silk-ipod {
+	@include sprite-silk;
+	background-position: -96px -352px;
+}
+
+.sprite-silk-information {
+	@include sprite-silk;
+	background-position: -112px -352px;
+}
+
+.sprite-silk-images {
+	@include sprite-silk;
+	background-position: -128px -352px;
+}
+
+.sprite-silk-image:link {
+	@include sprite-silk;
+	background-position: -144px -352px;
+}
+
+.sprite-silk-image_edit {
+	@include sprite-silk;
+	background-position: -160px -352px;
+}
+
+.sprite-silk-image_delete {
+	@include sprite-silk;
+	background-position: -176px -352px;
+}
+
+.sprite-silk-image_add {
+	@include sprite-silk;
+	background-position: -192px -352px;
+}
+
+.sprite-silk-image {
+	@include sprite-silk;
+	background-position: -208px -352px;
+}
+
+.sprite-silk-html_valid {
+	@include sprite-silk;
+	background-position: -224px -352px;
+}
+
+.sprite-silk-html_go {
+	@include sprite-silk;
+	background-position: -240px -352px;
+}
+
+.sprite-silk-html_delete {
+	@include sprite-silk;
+	background-position: -256px -352px;
+}
+
+.sprite-silk-html_add {
+	@include sprite-silk;
+	background-position: -272px -352px;
+}
+
+.sprite-silk-html {
+	@include sprite-silk;
+	background-position: -288px -352px;
+}
+
+.sprite-silk-house:link {
+	@include sprite-silk;
+	background-position: -304px -352px;
+}
+
+.sprite-silk-house_go {
+	@include sprite-silk;
+	background-position: -320px -352px;
+}
+
+.sprite-silk-house {
+	@include sprite-silk;
+	background-position: -336px -352px;
+}
+
+.sprite-silk-hourglass:link {
+	@include sprite-silk;
+	background-position: -352px -352px;
+}
+
+.sprite-silk-hourglass_go {
+	@include sprite-silk;
+	background-position: -368px 0px;
+}
+
+.sprite-silk-hourglass_delete {
+	@include sprite-silk;
+	background-position: -368px -16px;
+}
+
+.sprite-silk-hourglass_add {
+	@include sprite-silk;
+	background-position: -368px -32px;
+}
+
+.sprite-silk-hourglass {
+	@include sprite-silk;
+	background-position: -368px -48px;
+}
+
+.sprite-silk-help {
+	@include sprite-silk;
+	background-position: -368px -64px;
+}
+
+.sprite-silk-heart_delete {
+	@include sprite-silk;
+	background-position: -368px -80px;
+}
+
+.sprite-silk-heart_add {
+	@include sprite-silk;
+	background-position: -368px -96px;
+}
+
+.sprite-silk-heart {
+	@include sprite-silk;
+	background-position: -368px -112px;
+}
+
+.sprite-silk-group:link {
+	@include sprite-silk;
+	background-position: -368px -128px;
+}
+
+.sprite-silk-group_key {
+	@include sprite-silk;
+	background-position: -368px -144px;
+}
+
+.sprite-silk-group_go {
+	@include sprite-silk;
+	background-position: -368px -160px;
+}
+
+.sprite-silk-group_gear {
+	@include sprite-silk;
+	background-position: -368px -176px;
+}
+
+.sprite-silk-group_error {
+	@include sprite-silk;
+	background-position: -368px -192px;
+}
+
+.sprite-silk-group_edit {
+	@include sprite-silk;
+	background-position: -368px -208px;
+}
+
+.sprite-silk-group_delete {
+	@include sprite-silk;
+	background-position: -368px -224px;
+}
+
+.sprite-silk-group_add {
+	@include sprite-silk;
+	background-position: -368px -240px;
+}
+
+.sprite-silk-group {
+	@include sprite-silk;
+	background-position: -368px -256px;
+}
+
+.sprite-silk-font_go {
+	@include sprite-silk;
+	background-position: -368px -272px;
+}
+
+.sprite-silk-font_delete {
+	@include sprite-silk;
+	background-position: -368px -288px;
+}
+
+.sprite-silk-font_add {
+	@include sprite-silk;
+	background-position: -368px -304px;
+}
+
+.sprite-silk-font {
+	@include sprite-silk;
+	background-position: -368px -320px;
+}
+
+.sprite-silk-folder_wrench {
+	@include sprite-silk;
+	background-position: -368px -336px;
+}
+
+.sprite-silk-folder_user {
+	@include sprite-silk;
+	background-position: -368px -352px;
+}
+
+.sprite-silk-folder_table {
+	@include sprite-silk;
+	background-position: 0px -368px;
+}
+
+.sprite-silk-folder_star {
+	@include sprite-silk;
+	background-position: -16px -368px;
+}
+
+.sprite-silk-folder_picture {
+	@include sprite-silk;
+	background-position: -32px -368px;
+}
+
+.sprite-silk-folder_palette {
+	@include sprite-silk;
+	background-position: -48px -368px;
+}
+
+.sprite-silk-folder_page_white {
+	@include sprite-silk;
+	background-position: -64px -368px;
+}
+
+.sprite-silk-folder_page {
+	@include sprite-silk;
+	background-position: -80px -368px;
+}
+
+.sprite-silk-folder_magnify {
+	@include sprite-silk;
+	background-position: -96px -368px;
+}
+
+.sprite-silk-folder:link {
+	@include sprite-silk;
+	background-position: -112px -368px;
+}
+
+.sprite-silk-folder_lightbulb {
+	@include sprite-silk;
+	background-position: -128px -368px;
+}
+
+.sprite-silk-folder_key {
+	@include sprite-silk;
+	background-position: -144px -368px;
+}
+
+.sprite-silk-folder_image {
+	@include sprite-silk;
+	background-position: -160px -368px;
+}
+
+.sprite-silk-folder_heart {
+	@include sprite-silk;
+	background-position: -176px -368px;
+}
+
+.sprite-silk-folder_go {
+	@include sprite-silk;
+	background-position: -192px -368px;
+}
+
+.sprite-silk-folder_find {
+	@include sprite-silk;
+	background-position: -208px -368px;
+}
+
+.sprite-silk-folder_feed {
+	@include sprite-silk;
+	background-position: -224px -368px;
+}
+
+.sprite-silk-folder_explore {
+	@include sprite-silk;
+	background-position: -240px -368px;
+}
+
+.sprite-silk-folder_error {
+	@include sprite-silk;
+	background-position: -256px -368px;
+}
+
+.sprite-silk-folder_edit {
+	@include sprite-silk;
+	background-position: -272px -368px;
+}
+
+.sprite-silk-folder_delete {
+	@include sprite-silk;
+	background-position: -288px -368px;
+}
+
+.sprite-silk-folder_database {
+	@include sprite-silk;
+	background-position: -304px -368px;
+}
+
+.sprite-silk-folder_camera {
+	@include sprite-silk;
+	background-position: -320px -368px;
+}
+
+.sprite-silk-folder_bug {
+	@include sprite-silk;
+	background-position: -336px -368px;
+}
+
+.sprite-silk-folder_brick {
+	@include sprite-silk;
+	background-position: -352px -368px;
+}
+
+.sprite-silk-folder_bell {
+	@include sprite-silk;
+	background-position: -368px -368px;
+}
+
+.sprite-silk-folder_add {
+	@include sprite-silk;
+	background-position: -384px 0px;
+}
+
+.sprite-silk-folder {
+	@include sprite-silk;
+	background-position: -384px -16px;
+}
+
+.sprite-silk-flag_yellow {
+	@include sprite-silk;
+	background-position: -384px -32px;
+}
+
+.sprite-silk-flag_red {
+	@include sprite-silk;
+	background-position: -384px -48px;
+}
+
+.sprite-silk-flag_purple {
+	@include sprite-silk;
+	background-position: -384px -64px;
+}
+
+.sprite-silk-flag_pink {
+	@include sprite-silk;
+	background-position: -384px -80px;
+}
+
+.sprite-silk-flag_orange {
+	@include sprite-silk;
+	background-position: -384px -96px;
+}
+
+.sprite-silk-flag_green {
+	@include sprite-silk;
+	background-position: -384px -112px;
+}
+
+.sprite-silk-flag_blue {
+	@include sprite-silk;
+	background-position: -384px -128px;
+}
+
+.sprite-silk-find {
+	@include sprite-silk;
+	background-position: -384px -144px;
+}
+
+.sprite-silk-film_save {
+	@include sprite-silk;
+	background-position: -384px -160px;
+}
+
+.sprite-silk-film:link {
+	@include sprite-silk;
+	background-position: -384px -176px;
+}
+
+.sprite-silk-film_key {
+	@include sprite-silk;
+	background-position: -384px -192px;
+}
+
+.sprite-silk-film_go {
+	@include sprite-silk;
+	background-position: -384px -208px;
+}
+
+.sprite-silk-film_error {
+	@include sprite-silk;
+	background-position: -384px -224px;
+}
+
+.sprite-silk-film_edit {
+	@include sprite-silk;
+	background-position: -384px -240px;
+}
+
+.sprite-silk-film_delete {
+	@include sprite-silk;
+	background-position: -384px -256px;
+}
+
+.sprite-silk-film_add {
+	@include sprite-silk;
+	background-position: -384px -272px;
+}
+
+.sprite-silk-film {
+	@include sprite-silk;
+	background-position: -384px -288px;
+}
+
+.sprite-silk-female {
+	@include sprite-silk;
+	background-position: -384px -304px;
+}
+
+.sprite-silk-feed_magnify {
+	@include sprite-silk;
+	background-position: -384px -320px;
+}
+
+.sprite-silk-feed:link {
+	@include sprite-silk;
+	background-position: -384px -336px;
+}
+
+.sprite-silk-feed_key {
+	@include sprite-silk;
+	background-position: -384px -352px;
+}
+
+.sprite-silk-feed_go {
+	@include sprite-silk;
+	background-position: -384px -368px;
+}
+
+.sprite-silk-feed_error {
+	@include sprite-silk;
+	background-position: 0px -384px;
+}
+
+.sprite-silk-feed_edit {
+	@include sprite-silk;
+	background-position: -16px -384px;
+}
+
+.sprite-silk-feed_disk {
+	@include sprite-silk;
+	background-position: -32px -384px;
+}
+
+.sprite-silk-feed_delete {
+	@include sprite-silk;
+	background-position: -48px -384px;
+}
+
+.sprite-silk-feed_add {
+	@include sprite-silk;
+	background-position: -64px -384px;
+}
+
+.sprite-silk-feed {
+	@include sprite-silk;
+	background-position: -80px -384px;
+}
+
+.sprite-silk-eye {
+	@include sprite-silk;
+	background-position: -96px -384px;
+}
+
+.sprite-silk-exclamation {
+	@include sprite-silk;
+	background-position: -112px -384px;
+}
+
+.sprite-silk-error_go {
+	@include sprite-silk;
+	background-position: -128px -384px;
+}
+
+.sprite-silk-error_delete {
+	@include sprite-silk;
+	background-position: -144px -384px;
+}
+
+.sprite-silk-error_add {
+	@include sprite-silk;
+	background-position: -160px -384px;
+}
+
+.sprite-silk-error {
+	@include sprite-silk;
+	background-position: -176px -384px;
+}
+
+.sprite-silk-emoticon_wink {
+	@include sprite-silk;
+	background-position: -192px -384px;
+}
+
+.sprite-silk-emoticon_waii {
+	@include sprite-silk;
+	background-position: -208px -384px;
+}
+
+.sprite-silk-emoticon_unhappy {
+	@include sprite-silk;
+	background-position: -224px -384px;
+}
+
+.sprite-silk-emoticon_tongue {
+	@include sprite-silk;
+	background-position: -240px -384px;
+}
+
+.sprite-silk-emoticon_surprised {
+	@include sprite-silk;
+	background-position: -256px -384px;
+}
+
+.sprite-silk-emoticon_smile {
+	@include sprite-silk;
+	background-position: -272px -384px;
+}
+
+.sprite-silk-emoticon_happy {
+	@include sprite-silk;
+	background-position: -288px -384px;
+}
+
+.sprite-silk-emoticon_grin {
+	@include sprite-silk;
+	background-position: -304px -384px;
+}
+
+.sprite-silk-emoticon_evilgrin {
+	@include sprite-silk;
+	background-position: -320px -384px;
+}
+
+.sprite-silk-email_open_image {
+	@include sprite-silk;
+	background-position: -336px -384px;
+}
+
+.sprite-silk-email_open {
+	@include sprite-silk;
+	background-position: -352px -384px;
+}
+
+.sprite-silk-email:link {
+	@include sprite-silk;
+	background-position: -368px -384px;
+}
+
+.sprite-silk-email_go {
+	@include sprite-silk;
+	background-position: -384px -384px;
+}
+
+.sprite-silk-email_error {
+	@include sprite-silk;
+	background-position: -400px 0px;
+}
+
+.sprite-silk-email_edit {
+	@include sprite-silk;
+	background-position: -400px -16px;
+}
+
+.sprite-silk-email_delete {
+	@include sprite-silk;
+	background-position: -400px -32px;
+}
+
+.sprite-silk-email_attach {
+	@include sprite-silk;
+	background-position: -400px -48px;
+}
+
+.sprite-silk-email_add {
+	@include sprite-silk;
+	background-position: -400px -64px;
+}
+
+.sprite-silk-email {
+	@include sprite-silk;
+	background-position: -400px -80px;
+}
+
+.sprite-silk-dvd:link {
+	@include sprite-silk;
+	background-position: -400px -96px;
+}
+
+.sprite-silk-dvd_key {
+	@include sprite-silk;
+	background-position: -400px -112px;
+}
+
+.sprite-silk-dvd_go {
+	@include sprite-silk;
+	background-position: -400px -128px;
+}
+
+.sprite-silk-dvd_error {
+	@include sprite-silk;
+	background-position: -400px -144px;
+}
+
+.sprite-silk-dvd_edit {
+	@include sprite-silk;
+	background-position: -400px -160px;
+}
+
+.sprite-silk-dvd_delete {
+	@include sprite-silk;
+	background-position: -400px -176px;
+}
+
+.sprite-silk-dvd_add {
+	@include sprite-silk;
+	background-position: -400px -192px;
+}
+
+.sprite-silk-dvd {
+	@include sprite-silk;
+	background-position: -400px -208px;
+}
+
+.sprite-silk-drive_web {
+	@include sprite-silk;
+	background-position: -400px -224px;
+}
+
+.sprite-silk-drive_user {
+	@include sprite-silk;
+	background-position: -400px -240px;
+}
+
+.sprite-silk-drive_rename {
+	@include sprite-silk;
+	background-position: -400px -256px;
+}
+
+.sprite-silk-drive_network {
+	@include sprite-silk;
+	background-position: -400px -272px;
+}
+
+.sprite-silk-drive_magnify {
+	@include sprite-silk;
+	background-position: -400px -288px;
+}
+
+.sprite-silk-drive:link {
+	@include sprite-silk;
+	background-position: -400px -304px;
+}
+
+.sprite-silk-drive_key {
+	@include sprite-silk;
+	background-position: -400px -320px;
+}
+
+.sprite-silk-drive_go {
+	@include sprite-silk;
+	background-position: -400px -336px;
+}
+
+.sprite-silk-drive_error {
+	@include sprite-silk;
+	background-position: -400px -352px;
+}
+
+.sprite-silk-drive_edit {
+	@include sprite-silk;
+	background-position: -400px -368px;
+}
+
+.sprite-silk-drive_disk {
+	@include sprite-silk;
+	background-position: -400px -384px;
+}
+
+.sprite-silk-drive_delete {
+	@include sprite-silk;
+	background-position: 0px -400px;
+}
+
+.sprite-silk-drive_cd_empty {
+	@include sprite-silk;
+	background-position: -16px -400px;
+}
+
+.sprite-silk-drive_cd {
+	@include sprite-silk;
+	background-position: -32px -400px;
+}
+
+.sprite-silk-drive_burn {
+	@include sprite-silk;
+	background-position: -48px -400px;
+}
+
+.sprite-silk-drive_add {
+	@include sprite-silk;
+	background-position: -64px -400px;
+}
+
+.sprite-silk-drive {
+	@include sprite-silk;
+	background-position: -80px -400px;
+}
+
+.sprite-silk-drink_empty {
+	@include sprite-silk;
+	background-position: -96px -400px;
+}
+
+.sprite-silk-drink {
+	@include sprite-silk;
+	background-position: -112px -400px;
+}
+
+.sprite-silk-door_out {
+	@include sprite-silk;
+	background-position: -128px -400px;
+}
+
+.sprite-silk-door_open {
+	@include sprite-silk;
+	background-position: -144px -400px;
+}
+
+.sprite-silk-door_in {
+	@include sprite-silk;
+	background-position: -160px -400px;
+}
+
+.sprite-silk-door {
+	@include sprite-silk;
+	background-position: -176px -400px;
+}
+
+.sprite-silk-disk_multiple {
+	@include sprite-silk;
+	background-position: -192px -400px;
+}
+
+.sprite-silk-disk {
+	@include sprite-silk;
+	background-position: -208px -400px;
+}
+
+.sprite-silk-disconnect {
+	@include sprite-silk;
+	background-position: -224px -400px;
+}
+
+.sprite-silk-delete {
+	@include sprite-silk;
+	background-position: -240px -400px;
+}
+
+.sprite-silk-date_previous {
+	@include sprite-silk;
+	background-position: -256px -400px;
+}
+
+.sprite-silk-date_next {
+	@include sprite-silk;
+	background-position: -272px -400px;
+}
+
+.sprite-silk-date_magnify {
+	@include sprite-silk;
+	background-position: -288px -400px;
+}
+
+.sprite-silk-date:link {
+	@include sprite-silk;
+	background-position: -304px -400px;
+}
+
+.sprite-silk-date_go {
+	@include sprite-silk;
+	background-position: -320px -400px;
+}
+
+.sprite-silk-date_error {
+	@include sprite-silk;
+	background-position: -336px -400px;
+}
+
+.sprite-silk-date_edit {
+	@include sprite-silk;
+	background-position: -352px -400px;
+}
+
+.sprite-silk-date_delete {
+	@include sprite-silk;
+	background-position: -368px -400px;
+}
+
+.sprite-silk-date_add {
+	@include sprite-silk;
+	background-position: -384px -400px;
+}
+
+.sprite-silk-date {
+	@include sprite-silk;
+	background-position: -400px -400px;
+}
+
+.sprite-silk-database_table {
+	@include sprite-silk;
+	background-position: -416px 0px;
+}
+
+.sprite-silk-database_save {
+	@include sprite-silk;
+	background-position: -416px -16px;
+}
+
+.sprite-silk-database_refresh {
+	@include sprite-silk;
+	background-position: -416px -32px;
+}
+
+.sprite-silk-database:link {
+	@include sprite-silk;
+	background-position: -416px -48px;
+}
+
+.sprite-silk-database_lightning {
+	@include sprite-silk;
+	background-position: -416px -64px;
+}
+
+.sprite-silk-database_key {
+	@include sprite-silk;
+	background-position: -416px -80px;
+}
+
+.sprite-silk-database_go {
+	@include sprite-silk;
+	background-position: -416px -96px;
+}
+
+.sprite-silk-database_gear {
+	@include sprite-silk;
+	background-position: -416px -112px;
+}
+
+.sprite-silk-database_error {
+	@include sprite-silk;
+	background-position: -416px -128px;
+}
+
+.sprite-silk-database_edit {
+	@include sprite-silk;
+	background-position: -416px -144px;
+}
+
+.sprite-silk-database_delete {
+	@include sprite-silk;
+	background-position: -416px -160px;
+}
+
+.sprite-silk-database_connect {
+	@include sprite-silk;
+	background-position: -416px -176px;
+}
+
+.sprite-silk-database_add {
+	@include sprite-silk;
+	background-position: -416px -192px;
+}
+
+.sprite-silk-database {
+	@include sprite-silk;
+	background-position: -416px -208px;
+}
+
+.sprite-silk-cut_red {
+	@include sprite-silk;
+	background-position: -416px -224px;
+}
+
+.sprite-silk-cut {
+	@include sprite-silk;
+	background-position: -416px -240px;
+}
+
+.sprite-silk-cursor {
+	@include sprite-silk;
+	background-position: -416px -256px;
+}
+
+.sprite-silk-cup:link {
+	@include sprite-silk;
+	background-position: -416px -272px;
+}
+
+.sprite-silk-cup_key {
+	@include sprite-silk;
+	background-position: -416px -288px;
+}
+
+.sprite-silk-cup_go {
+	@include sprite-silk;
+	background-position: -416px -304px;
+}
+
+.sprite-silk-cup_error {
+	@include sprite-silk;
+	background-position: -416px -320px;
+}
+
+.sprite-silk-cup_edit {
+	@include sprite-silk;
+	background-position: -416px -336px;
+}
+
+.sprite-silk-cup_delete {
+	@include sprite-silk;
+	background-position: -416px -352px;
+}
+
+.sprite-silk-cup_add {
+	@include sprite-silk;
+	background-position: -416px -368px;
+}
+
+.sprite-silk-cup {
+	@include sprite-silk;
+	background-position: -416px -384px;
+}
+
+.sprite-silk-css_valid {
+	@include sprite-silk;
+	background-position: -416px -400px;
+}
+
+.sprite-silk-css_go {
+	@include sprite-silk;
+	background-position: 0px -416px;
+}
+
+.sprite-silk-css_delete {
+	@include sprite-silk;
+	background-position: -16px -416px;
+}
+
+.sprite-silk-css_add {
+	@include sprite-silk;
+	background-position: -32px -416px;
+}
+
+.sprite-silk-css {
+	@include sprite-silk;
+	background-position: -48px -416px;
+}
+
+.sprite-silk-cross {
+	@include sprite-silk;
+	background-position: -64px -416px;
+}
+
+.sprite-silk-creditcards {
+	@include sprite-silk;
+	background-position: -80px -416px;
+}
+
+.sprite-silk-controller_error {
+	@include sprite-silk;
+	background-position: -96px -416px;
+}
+
+.sprite-silk-controller_delete {
+	@include sprite-silk;
+	background-position: -112px -416px;
+}
+
+.sprite-silk-controller_add {
+	@include sprite-silk;
+	background-position: -128px -416px;
+}
+
+.sprite-silk-controller {
+	@include sprite-silk;
+	background-position: -144px -416px;
+}
+
+.sprite-silk-control_stop_blue {
+	@include sprite-silk;
+	background-position: -160px -416px;
+}
+
+.sprite-silk-control_stop {
+	@include sprite-silk;
+	background-position: -176px -416px;
+}
+
+.sprite-silk-control_start_blue {
+	@include sprite-silk;
+	background-position: -192px -416px;
+}
+
+.sprite-silk-control_start {
+	@include sprite-silk;
+	background-position: -208px -416px;
+}
+
+.sprite-silk-control_rewind_blue {
+	@include sprite-silk;
+	background-position: -224px -416px;
+}
+
+.sprite-silk-control_rewind {
+	@include sprite-silk;
+	background-position: -240px -416px;
+}
+
+.sprite-silk-control_repeat_blue {
+	@include sprite-silk;
+	background-position: -256px -416px;
+}
+
+.sprite-silk-control_repeat {
+	@include sprite-silk;
+	background-position: -272px -416px;
+}
+
+.sprite-silk-control_play_blue {
+	@include sprite-silk;
+	background-position: -288px -416px;
+}
+
+.sprite-silk-control_play {
+	@include sprite-silk;
+	background-position: -304px -416px;
+}
+
+.sprite-silk-control_pause_blue {
+	@include sprite-silk;
+	background-position: -320px -416px;
+}
+
+.sprite-silk-control_pause {
+	@include sprite-silk;
+	background-position: -336px -416px;
+}
+
+.sprite-silk-control_fastforward_blue {
+	@include sprite-silk;
+	background-position: -352px -416px;
+}
+
+.sprite-silk-control_fastforward {
+	@include sprite-silk;
+	background-position: -368px -416px;
+}
+
+.sprite-silk-control_equalizer_blue {
+	@include sprite-silk;
+	background-position: -384px -416px;
+}
+
+.sprite-silk-control_equalizer {
+	@include sprite-silk;
+	background-position: -400px -416px;
+}
+
+.sprite-silk-control_end_blue {
+	@include sprite-silk;
+	background-position: -416px -416px;
+}
+
+.sprite-silk-control_end {
+	@include sprite-silk;
+	background-position: -432px 0px;
+}
+
+.sprite-silk-control_eject_blue {
+	@include sprite-silk;
+	background-position: -432px -16px;
+}
+
+.sprite-silk-control_eject {
+	@include sprite-silk;
+	background-position: -432px -32px;
+}
+
+.sprite-silk-contrast_low {
+	@include sprite-silk;
+	background-position: -432px -48px;
+}
+
+.sprite-silk-contrast_increase {
+	@include sprite-silk;
+	background-position: -432px -64px;
+}
+
+.sprite-silk-contrast_high {
+	@include sprite-silk;
+	background-position: -432px -80px;
+}
+
+.sprite-silk-contrast_decrease {
+	@include sprite-silk;
+	background-position: -432px -96px;
+}
+
+.sprite-silk-contrast {
+	@include sprite-silk;
+	background-position: -432px -112px;
+}
+
+.sprite-silk-connect {
+	@include sprite-silk;
+	background-position: -432px -128px;
+}
+
+.sprite-silk-computer:link {
+	@include sprite-silk;
+	background-position: -432px -144px;
+}
+
+.sprite-silk-computer_key {
+	@include sprite-silk;
+	background-position: -432px -160px;
+}
+
+.sprite-silk-computer_go {
+	@include sprite-silk;
+	background-position: -432px -176px;
+}
+
+.sprite-silk-computer_error {
+	@include sprite-silk;
+	background-position: -432px -192px;
+}
+
+.sprite-silk-computer_edit {
+	@include sprite-silk;
+	background-position: -432px -208px;
+}
+
+.sprite-silk-computer_delete {
+	@include sprite-silk;
+	background-position: -432px -224px;
+}
+
+.sprite-silk-computer_add {
+	@include sprite-silk;
+	background-position: -432px -240px;
+}
+
+.sprite-silk-computer {
+	@include sprite-silk;
+	background-position: -432px -256px;
+}
+
+.sprite-silk-compress {
+	@include sprite-silk;
+	background-position: -432px -272px;
+}
+
+.sprite-silk-comments_delete {
+	@include sprite-silk;
+	background-position: -432px -288px;
+}
+
+.sprite-silk-comments_add {
+	@include sprite-silk;
+	background-position: -432px -304px;
+}
+
+.sprite-silk-comments {
+	@include sprite-silk;
+	background-position: -432px -320px;
+}
+
+.sprite-silk-comment_edit {
+	@include sprite-silk;
+	background-position: -432px -336px;
+}
+
+.sprite-silk-comment_delete {
+	@include sprite-silk;
+	background-position: -432px -352px;
+}
+
+.sprite-silk-comment_add {
+	@include sprite-silk;
+	background-position: -432px -368px;
+}
+
+.sprite-silk-comment {
+	@include sprite-silk;
+	background-position: -432px -384px;
+}
+
+.sprite-silk-color_wheel {
+	@include sprite-silk;
+	background-position: -432px -400px;
+}
+
+.sprite-silk-color_swatch {
+	@include sprite-silk;
+	background-position: -432px -416px;
+}
+
+.sprite-silk-coins_edit {
+	@include sprite-silk;
+	background-position: 0px -432px;
+}
+
+.sprite-silk-coins_delete {
+	@include sprite-silk;
+	background-position: -16px -432px;
+}
+
+.sprite-silk-coins_add {
+	@include sprite-silk;
+	background-position: -32px -432px;
+}
+
+.sprite-silk-coins {
+	@include sprite-silk;
+	background-position: -48px -432px;
+}
+
+.sprite-silk-cog_go {
+	@include sprite-silk;
+	background-position: -64px -432px;
+}
+
+.sprite-silk-cog_error {
+	@include sprite-silk;
+	background-position: -80px -432px;
+}
+
+.sprite-silk-cog_edit {
+	@include sprite-silk;
+	background-position: -96px -432px;
+}
+
+.sprite-silk-cog_delete {
+	@include sprite-silk;
+	background-position: -112px -432px;
+}
+
+.sprite-silk-cog_add {
+	@include sprite-silk;
+	background-position: -128px -432px;
+}
+
+.sprite-silk-cog {
+	@include sprite-silk;
+	background-position: -144px -432px;
+}
+
+.sprite-silk-clock_stop {
+	@include sprite-silk;
+	background-position: -160px -432px;
+}
+
+.sprite-silk-clock_red {
+	@include sprite-silk;
+	background-position: -176px -432px;
+}
+
+.sprite-silk-clock_play {
+	@include sprite-silk;
+	background-position: -192px -432px;
+}
+
+.sprite-silk-clock_pause {
+	@include sprite-silk;
+	background-position: -208px -432px;
+}
+
+.sprite-silk-clock:link {
+	@include sprite-silk;
+	background-position: -224px -432px;
+}
+
+.sprite-silk-clock_go {
+	@include sprite-silk;
+	background-position: -240px -432px;
+}
+
+.sprite-silk-clock_error {
+	@include sprite-silk;
+	background-position: -256px -432px;
+}
+
+.sprite-silk-clock_edit {
+	@include sprite-silk;
+	background-position: -272px -432px;
+}
+
+.sprite-silk-clock_delete {
+	@include sprite-silk;
+	background-position: -288px -432px;
+}
+
+.sprite-silk-clock_add {
+	@include sprite-silk;
+	background-position: -304px -432px;
+}
+
+.sprite-silk-clock {
+	@include sprite-silk;
+	background-position: -320px -432px;
+}
+
+.sprite-silk-chart_pie:link {
+	@include sprite-silk;
+	background-position: -336px -432px;
+}
+
+.sprite-silk-chart_pie_error {
+	@include sprite-silk;
+	background-position: -352px -432px;
+}
+
+.sprite-silk-chart_pie_edit {
+	@include sprite-silk;
+	background-position: -368px -432px;
+}
+
+.sprite-silk-chart_pie_delete {
+	@include sprite-silk;
+	background-position: -384px -432px;
+}
+
+.sprite-silk-chart_pie_add {
+	@include sprite-silk;
+	background-position: -400px -432px;
+}
+
+.sprite-silk-chart_pie {
+	@include sprite-silk;
+	background-position: -416px -432px;
+}
+
+.sprite-silk-chart_organisation_delete {
+	@include sprite-silk;
+	background-position: -432px -432px;
+}
+
+.sprite-silk-chart_organisation_add {
+	@include sprite-silk;
+	background-position: -448px 0px;
+}
+
+.sprite-silk-chart_organisation {
+	@include sprite-silk;
+	background-position: -448px -16px;
+}
+
+.sprite-silk-chart_line:link {
+	@include sprite-silk;
+	background-position: -448px -32px;
+}
+
+.sprite-silk-chart_line_error {
+	@include sprite-silk;
+	background-position: -448px -48px;
+}
+
+.sprite-silk-chart_line_edit {
+	@include sprite-silk;
+	background-position: -448px -64px;
+}
+
+.sprite-silk-chart_line_delete {
+	@include sprite-silk;
+	background-position: -448px -80px;
+}
+
+.sprite-silk-chart_line_add {
+	@include sprite-silk;
+	background-position: -448px -96px;
+}
+
+.sprite-silk-chart_line {
+	@include sprite-silk;
+	background-position: -448px -112px;
+}
+
+.sprite-silk-chart_curve:link {
+	@include sprite-silk;
+	background-position: -448px -128px;
+}
+
+.sprite-silk-chart_curve_go {
+	@include sprite-silk;
+	background-position: -448px -144px;
+}
+
+.sprite-silk-chart_curve_error {
+	@include sprite-silk;
+	background-position: -448px -160px;
+}
+
+.sprite-silk-chart_curve_edit {
+	@include sprite-silk;
+	background-position: -448px -176px;
+}
+
+.sprite-silk-chart_curve_delete {
+	@include sprite-silk;
+	background-position: -448px -192px;
+}
+
+.sprite-silk-chart_curve_add {
+	@include sprite-silk;
+	background-position: -448px -208px;
+}
+
+.sprite-silk-chart_curve {
+	@include sprite-silk;
+	background-position: -448px -224px;
+}
+
+.sprite-silk-chart_bar:link {
+	@include sprite-silk;
+	background-position: -448px -240px;
+}
+
+.sprite-silk-chart_bar_error {
+	@include sprite-silk;
+	background-position: -448px -256px;
+}
+
+.sprite-silk-chart_bar_edit {
+	@include sprite-silk;
+	background-position: -448px -272px;
+}
+
+.sprite-silk-chart_bar_delete {
+	@include sprite-silk;
+	background-position: -448px -288px;
+}
+
+.sprite-silk-chart_bar_add {
+	@include sprite-silk;
+	background-position: -448px -304px;
+}
+
+.sprite-silk-chart_bar {
+	@include sprite-silk;
+	background-position: -448px -320px;
+}
+
+.sprite-silk-cd_go {
+	@include sprite-silk;
+	background-position: -448px -336px;
+}
+
+.sprite-silk-cd_eject {
+	@include sprite-silk;
+	background-position: -448px -352px;
+}
+
+.sprite-silk-cd_edit {
+	@include sprite-silk;
+	background-position: -448px -368px;
+}
+
+.sprite-silk-cd_delete {
+	@include sprite-silk;
+	background-position: -448px -384px;
+}
+
+.sprite-silk-cd_burn {
+	@include sprite-silk;
+	background-position: -448px -400px;
+}
+
+.sprite-silk-cd_add {
+	@include sprite-silk;
+	background-position: -448px -416px;
+}
+
+.sprite-silk-cd {
+	@include sprite-silk;
+	background-position: -448px -432px;
+}
+
+.sprite-silk-cart_remove {
+	@include sprite-silk;
+	background-position: 0px -448px;
+}
+
+.sprite-silk-cart_put {
+	@include sprite-silk;
+	background-position: -16px -448px;
+}
+
+.sprite-silk-cart_go {
+	@include sprite-silk;
+	background-position: -32px -448px;
+}
+
+.sprite-silk-cart_error {
+	@include sprite-silk;
+	background-position: -48px -448px;
+}
+
+.sprite-silk-cart_edit {
+	@include sprite-silk;
+	background-position: -64px -448px;
+}
+
+.sprite-silk-cart_delete {
+	@include sprite-silk;
+	background-position: -80px -448px;
+}
+
+.sprite-silk-cart_add {
+	@include sprite-silk;
+	background-position: -96px -448px;
+}
+
+.sprite-silk-cart {
+	@include sprite-silk;
+	background-position: -112px -448px;
+}
+
+.sprite-silk-car_delete {
+	@include sprite-silk;
+	background-position: -128px -448px;
+}
+
+.sprite-silk-car_add {
+	@include sprite-silk;
+	background-position: -144px -448px;
+}
+
+.sprite-silk-car {
+	@include sprite-silk;
+	background-position: -160px -448px;
+}
+
+.sprite-silk-cancel {
+	@include sprite-silk;
+	background-position: -176px -448px;
+}
+
+.sprite-silk-camera_small {
+	@include sprite-silk;
+	background-position: -192px -448px;
+}
+
+.sprite-silk-camera:link {
+	@include sprite-silk;
+	background-position: -208px -448px;
+}
+
+.sprite-silk-camera_go {
+	@include sprite-silk;
+	background-position: -224px -448px;
+}
+
+.sprite-silk-camera_error {
+	@include sprite-silk;
+	background-position: -240px -448px;
+}
+
+.sprite-silk-camera_edit {
+	@include sprite-silk;
+	background-position: -256px -448px;
+}
+
+.sprite-silk-camera_delete {
+	@include sprite-silk;
+	background-position: -272px -448px;
+}
+
+.sprite-silk-camera_add {
+	@include sprite-silk;
+	background-position: -288px -448px;
+}
+
+.sprite-silk-camera {
+	@include sprite-silk;
+	background-position: -304px -448px;
+}
+
+.sprite-silk-calendar_view_week {
+	@include sprite-silk;
+	background-position: -320px -448px;
+}
+
+.sprite-silk-calendar_view_month {
+	@include sprite-silk;
+	background-position: -336px -448px;
+}
+
+.sprite-silk-calendar_view_day {
+	@include sprite-silk;
+	background-position: -352px -448px;
+}
+
+.sprite-silk-calendar:link {
+	@include sprite-silk;
+	background-position: -368px -448px;
+}
+
+.sprite-silk-calendar_edit {
+	@include sprite-silk;
+	background-position: -384px -448px;
+}
+
+.sprite-silk-calendar_delete {
+	@include sprite-silk;
+	background-position: -400px -448px;
+}
+
+.sprite-silk-calendar_add {
+	@include sprite-silk;
+	background-position: -416px -448px;
+}
+
+.sprite-silk-calendar {
+	@include sprite-silk;
+	background-position: -432px -448px;
+}
+
+.sprite-silk-calculator:link {
+	@include sprite-silk;
+	background-position: -448px -448px;
+}
+
+.sprite-silk-calculator_error {
+	@include sprite-silk;
+	background-position: -464px 0px;
+}
+
+.sprite-silk-calculator_edit {
+	@include sprite-silk;
+	background-position: -464px -16px;
+}
+
+.sprite-silk-calculator_delete {
+	@include sprite-silk;
+	background-position: -464px -32px;
+}
+
+.sprite-silk-calculator_add {
+	@include sprite-silk;
+	background-position: -464px -48px;
+}
+
+.sprite-silk-calculator {
+	@include sprite-silk;
+	background-position: -464px -64px;
+}
+
+.sprite-silk-cake {
+	@include sprite-silk;
+	background-position: -464px -80px;
+}
+
+.sprite-silk-bullet_yellow {
+	@include sprite-silk;
+	background-position: -464px -96px;
+}
+
+.sprite-silk-bullet_wrench {
+	@include sprite-silk;
+	background-position: -464px -112px;
+}
+
+.sprite-silk-bullet_white {
+	@include sprite-silk;
+	background-position: -464px -128px;
+}
+
+.sprite-silk-bullet_toggle_plus {
+	@include sprite-silk;
+	background-position: -464px -144px;
+}
+
+.sprite-silk-bullet_toggle_minus {
+	@include sprite-silk;
+	background-position: -464px -160px;
+}
+
+.sprite-silk-bullet_star {
+	@include sprite-silk;
+	background-position: -464px -176px;
+}
+
+.sprite-silk-bullet_red {
+	@include sprite-silk;
+	background-position: -464px -192px;
+}
+
+.sprite-silk-bullet_purple {
+	@include sprite-silk;
+	background-position: -464px -208px;
+}
+
+.sprite-silk-bullet_pink {
+	@include sprite-silk;
+	background-position: -464px -224px;
+}
+
+.sprite-silk-bullet_picture {
+	@include sprite-silk;
+	background-position: -464px -240px;
+}
+
+.sprite-silk-bullet_orange {
+	@include sprite-silk;
+	background-position: -464px -256px;
+}
+
+.sprite-silk-bullet_key {
+	@include sprite-silk;
+	background-position: -464px -272px;
+}
+
+.sprite-silk-bullet_green {
+	@include sprite-silk;
+	background-position: -464px -288px;
+}
+
+.sprite-silk-bullet_go {
+	@include sprite-silk;
+	background-position: -464px -304px;
+}
+
+.sprite-silk-bullet_feed {
+	@include sprite-silk;
+	background-position: -464px -320px;
+}
+
+.sprite-silk-bullet_error {
+	@include sprite-silk;
+	background-position: -464px -336px;
+}
+
+.sprite-silk-bullet_disk {
+	@include sprite-silk;
+	background-position: -464px -352px;
+}
+
+.sprite-silk-bullet_delete {
+	@include sprite-silk;
+	background-position: -464px -368px;
+}
+
+.sprite-silk-bullet_blue {
+	@include sprite-silk;
+	background-position: -464px -384px;
+}
+
+.sprite-silk-bullet_black {
+	@include sprite-silk;
+	background-position: -464px -400px;
+}
+
+.sprite-silk-bullet_arrow_up {
+	@include sprite-silk;
+	background-position: -464px -416px;
+}
+
+.sprite-silk-bullet_arrow_top {
+	@include sprite-silk;
+	background-position: -464px -432px;
+}
+
+.sprite-silk-bullet_arrow_down {
+	@include sprite-silk;
+	background-position: -464px -448px;
+}
+
+.sprite-silk-bullet_arrow_bottom {
+	@include sprite-silk;
+	background-position: 0px -464px;
+}
+
+.sprite-silk-bullet_add {
+	@include sprite-silk;
+	background-position: -16px -464px;
+}
+
+.sprite-silk-building:link {
+	@include sprite-silk;
+	background-position: -32px -464px;
+}
+
+.sprite-silk-building_key {
+	@include sprite-silk;
+	background-position: -48px -464px;
+}
+
+.sprite-silk-building_go {
+	@include sprite-silk;
+	background-position: -64px -464px;
+}
+
+.sprite-silk-building_error {
+	@include sprite-silk;
+	background-position: -80px -464px;
+}
+
+.sprite-silk-building_edit {
+	@include sprite-silk;
+	background-position: -96px -464px;
+}
+
+.sprite-silk-building_delete {
+	@include sprite-silk;
+	background-position: -112px -464px;
+}
+
+.sprite-silk-building_add {
+	@include sprite-silk;
+	background-position: -128px -464px;
+}
+
+.sprite-silk-building {
+	@include sprite-silk;
+	background-position: -144px -464px;
+}
+
+.sprite-silk-bug:link {
+	@include sprite-silk;
+	background-position: -160px -464px;
+}
+
+.sprite-silk-bug_go {
+	@include sprite-silk;
+	background-position: -176px -464px;
+}
+
+.sprite-silk-bug_error {
+	@include sprite-silk;
+	background-position: -192px -464px;
+}
+
+.sprite-silk-bug_edit {
+	@include sprite-silk;
+	background-position: -208px -464px;
+}
+
+.sprite-silk-bug_delete {
+	@include sprite-silk;
+	background-position: -224px -464px;
+}
+
+.sprite-silk-bug_add {
+	@include sprite-silk;
+	background-position: -240px -464px;
+}
+
+.sprite-silk-bug {
+	@include sprite-silk;
+	background-position: -256px -464px;
+}
+
+.sprite-silk-briefcase {
+	@include sprite-silk;
+	background-position: -272px -464px;
+}
+
+.sprite-silk-bricks {
+	@include sprite-silk;
+	background-position: -288px -464px;
+}
+
+.sprite-silk-brick:link {
+	@include sprite-silk;
+	background-position: -304px -464px;
+}
+
+.sprite-silk-brick_go {
+	@include sprite-silk;
+	background-position: -320px -464px;
+}
+
+.sprite-silk-brick_error {
+	@include sprite-silk;
+	background-position: -336px -464px;
+}
+
+.sprite-silk-brick_edit {
+	@include sprite-silk;
+	background-position: -352px -464px;
+}
+
+.sprite-silk-brick_delete {
+	@include sprite-silk;
+	background-position: -368px -464px;
+}
+
+.sprite-silk-brick_add {
+	@include sprite-silk;
+	background-position: -384px -464px;
+}
+
+.sprite-silk-brick {
+	@include sprite-silk;
+	background-position: -400px -464px;
+}
+
+.sprite-silk-box {
+	@include sprite-silk;
+	background-position: -416px -464px;
+}
+
+.sprite-silk-book_previous {
+	@include sprite-silk;
+	background-position: -432px -464px;
+}
+
+.sprite-silk-book_open {
+	@include sprite-silk;
+	background-position: -448px -464px;
+}
+
+.sprite-silk-book_next {
+	@include sprite-silk;
+	background-position: -464px -464px;
+}
+
+.sprite-silk-book:link {
+	@include sprite-silk;
+	background-position: -480px 0px;
+}
+
+.sprite-silk-book_key {
+	@include sprite-silk;
+	background-position: -480px -16px;
+}
+
+.sprite-silk-book_go {
+	@include sprite-silk;
+	background-position: -480px -32px;
+}
+
+.sprite-silk-book_error {
+	@include sprite-silk;
+	background-position: -480px -48px;
+}
+
+.sprite-silk-book_edit {
+	@include sprite-silk;
+	background-position: -480px -64px;
+}
+
+.sprite-silk-book_delete {
+	@include sprite-silk;
+	background-position: -480px -80px;
+}
+
+.sprite-silk-book_addresses {
+	@include sprite-silk;
+	background-position: -480px -96px;
+}
+
+.sprite-silk-book_add {
+	@include sprite-silk;
+	background-position: -480px -112px;
+}
+
+.sprite-silk-book {
+	@include sprite-silk;
+	background-position: -480px -128px;
+}
+
+.sprite-silk-bomb {
+	@include sprite-silk;
+	background-position: -480px -144px;
+}
+
+.sprite-silk-bin_empty {
+	@include sprite-silk;
+	background-position: -480px -160px;
+}
+
+.sprite-silk-bin_closed {
+	@include sprite-silk;
+	background-position: -480px -176px;
+}
+
+.sprite-silk-bin {
+	@include sprite-silk;
+	background-position: -480px -192px;
+}
+
+.sprite-silk-bell:link {
+	@include sprite-silk;
+	background-position: -480px -208px;
+}
+
+.sprite-silk-bell_go {
+	@include sprite-silk;
+	background-position: -480px -224px;
+}
+
+.sprite-silk-bell_error {
+	@include sprite-silk;
+	background-position: -480px -240px;
+}
+
+.sprite-silk-bell_delete {
+	@include sprite-silk;
+	background-position: -480px -256px;
+}
+
+.sprite-silk-bell_add {
+	@include sprite-silk;
+	background-position: -480px -272px;
+}
+
+.sprite-silk-bell {
+	@include sprite-silk;
+	background-position: -480px -288px;
+}
+
+.sprite-silk-basket_remove {
+	@include sprite-silk;
+	background-position: -480px -304px;
+}
+
+.sprite-silk-basket_put {
+	@include sprite-silk;
+	background-position: -480px -320px;
+}
+
+.sprite-silk-basket_go {
+	@include sprite-silk;
+	background-position: -480px -336px;
+}
+
+.sprite-silk-basket_error {
+	@include sprite-silk;
+	background-position: -480px -352px;
+}
+
+.sprite-silk-basket_edit {
+	@include sprite-silk;
+	background-position: -480px -368px;
+}
+
+.sprite-silk-basket_delete {
+	@include sprite-silk;
+	background-position: -480px -384px;
+}
+
+.sprite-silk-basket_add {
+	@include sprite-silk;
+	background-position: -480px -400px;
+}
+
+.sprite-silk-basket {
+	@include sprite-silk;
+	background-position: -480px -416px;
+}
+
+.sprite-silk-award_star_silver_3 {
+	@include sprite-silk;
+	background-position: -480px -432px;
+}
+
+.sprite-silk-award_star_silver_2 {
+	@include sprite-silk;
+	background-position: -480px -448px;
+}
+
+.sprite-silk-award_star_silver_1 {
+	@include sprite-silk;
+	background-position: -480px -464px;
+}
+
+.sprite-silk-award_star_gold_3 {
+	@include sprite-silk;
+	background-position: 0px -480px;
+}
+
+.sprite-silk-award_star_gold_2 {
+	@include sprite-silk;
+	background-position: -16px -480px;
+}
+
+.sprite-silk-award_star_gold_1 {
+	@include sprite-silk;
+	background-position: -32px -480px;
+}
+
+.sprite-silk-award_star_delete {
+	@include sprite-silk;
+	background-position: -48px -480px;
+}
+
+.sprite-silk-award_star_bronze_3 {
+	@include sprite-silk;
+	background-position: -64px -480px;
+}
+
+.sprite-silk-award_star_bronze_2 {
+	@include sprite-silk;
+	background-position: -80px -480px;
+}
+
+.sprite-silk-award_star_bronze_1 {
+	@include sprite-silk;
+	background-position: -96px -480px;
+}
+
+.sprite-silk-award_star_add {
+	@include sprite-silk;
+	background-position: -112px -480px;
+}
+
+.sprite-silk-attach {
+	@include sprite-silk;
+	background-position: -128px -480px;
+}
+
+.sprite-silk-asterisk_yellow {
+	@include sprite-silk;
+	background-position: -144px -480px;
+}
+
+.sprite-silk-asterisk_orange {
+	@include sprite-silk;
+	background-position: -160px -480px;
+}
+
+.sprite-silk-arrow_up {
+	@include sprite-silk;
+	background-position: -176px -480px;
+}
+
+.sprite-silk-arrow_undo {
+	@include sprite-silk;
+	background-position: -192px -480px;
+}
+
+.sprite-silk-arrow_turn_right {
+	@include sprite-silk;
+	background-position: -208px -480px;
+}
+
+.sprite-silk-arrow_turn_left {
+	@include sprite-silk;
+	background-position: -224px -480px;
+}
+
+.sprite-silk-arrow_switch {
+	@include sprite-silk;
+	background-position: -240px -480px;
+}
+
+.sprite-silk-arrow_rotate_clockwise {
+	@include sprite-silk;
+	background-position: -256px -480px;
+}
+
+.sprite-silk-arrow_rotate_anticlockwise {
+	@include sprite-silk;
+	background-position: -272px -480px;
+}
+
+.sprite-silk-arrow_right {
+	@include sprite-silk;
+	background-position: -288px -480px;
+}
+
+.sprite-silk-arrow_refresh_small {
+	@include sprite-silk;
+	background-position: -304px -480px;
+}
+
+.sprite-silk-arrow_refresh {
+	@include sprite-silk;
+	background-position: -320px -480px;
+}
+
+.sprite-silk-arrow_redo {
+	@include sprite-silk;
+	background-position: -336px -480px;
+}
+
+.sprite-silk-arrow_out {
+	@include sprite-silk;
+	background-position: -352px -480px;
+}
+
+.sprite-silk-arrow_merge {
+	@include sprite-silk;
+	background-position: -368px -480px;
+}
+
+.sprite-silk-arrow_left {
+	@include sprite-silk;
+	background-position: -384px -480px;
+}
+
+.sprite-silk-arrow_join {
+	@include sprite-silk;
+	background-position: -400px -480px;
+}
+
+.sprite-silk-arrow_inout {
+	@include sprite-silk;
+	background-position: -416px -480px;
+}
+
+.sprite-silk-arrow_in {
+	@include sprite-silk;
+	background-position: -432px -480px;
+}
+
+.sprite-silk-arrow_down {
+	@include sprite-silk;
+	background-position: -448px -480px;
+}
+
+.sprite-silk-arrow_divide {
+	@include sprite-silk;
+	background-position: -464px -480px;
+}
+
+.sprite-silk-arrow_branch {
+	@include sprite-silk;
+	background-position: -480px -480px;
+}
+
+.sprite-silk-application_xp_terminal {
+	@include sprite-silk;
+	background-position: -496px 0px;
+}
+
+.sprite-silk-application_xp {
+	@include sprite-silk;
+	background-position: -496px -16px;
+}
+
+.sprite-silk-application_view_tile {
+	@include sprite-silk;
+	background-position: -496px -32px;
+}
+
+.sprite-silk-application_view_list {
+	@include sprite-silk;
+	background-position: -496px -48px;
+}
+
+.sprite-silk-application_view_icons {
+	@include sprite-silk;
+	background-position: -496px -64px;
+}
+
+.sprite-silk-application_view_gallery {
+	@include sprite-silk;
+	background-position: -496px -80px;
+}
+
+.sprite-silk-application_view_detail {
+	@include sprite-silk;
+	background-position: -496px -96px;
+}
+
+.sprite-silk-application_view_columns {
+	@include sprite-silk;
+	background-position: -496px -112px;
+}
+
+.sprite-silk-application_tile_vertical {
+	@include sprite-silk;
+	background-position: -496px -128px;
+}
+
+.sprite-silk-application_tile_horizontal {
+	@include sprite-silk;
+	background-position: -496px -144px;
+}
+
+.sprite-silk-application_split {
+	@include sprite-silk;
+	background-position: -496px -160px;
+}
+
+.sprite-silk-application_side_tree {
+	@include sprite-silk;
+	background-position: -496px -176px;
+}
+
+.sprite-silk-application_side_list {
+	@include sprite-silk;
+	background-position: -496px -192px;
+}
+
+.sprite-silk-application_side_expand {
+	@include sprite-silk;
+	background-position: -496px -208px;
+}
+
+.sprite-silk-application_side_contract {
+	@include sprite-silk;
+	background-position: -496px -224px;
+}
+
+.sprite-silk-application_side_boxes {
+	@include sprite-silk;
+	background-position: -496px -240px;
+}
+
+.sprite-silk-application_put {
+	@include sprite-silk;
+	background-position: -496px -256px;
+}
+
+.sprite-silk-application_osx_terminal {
+	@include sprite-silk;
+	background-position: -496px -272px;
+}
+
+.sprite-silk-application_osx {
+	@include sprite-silk;
+	background-position: -496px -288px;
+}
+
+.sprite-silk-application:link {
+	@include sprite-silk;
+	background-position: -496px -304px;
+}
+
+.sprite-silk-application_lightning {
+	@include sprite-silk;
+	background-position: -496px -320px;
+}
+
+.sprite-silk-application_key {
+	@include sprite-silk;
+	background-position: -496px -336px;
+}
+
+.sprite-silk-application_home {
+	@include sprite-silk;
+	background-position: -496px -352px;
+}
+
+.sprite-silk-application_go {
+	@include sprite-silk;
+	background-position: -496px -368px;
+}
+
+.sprite-silk-application_get {
+	@include sprite-silk;
+	background-position: -496px -384px;
+}
+
+.sprite-silk-application_form_magnify {
+	@include sprite-silk;
+	background-position: -496px -400px;
+}
+
+.sprite-silk-application_form_edit {
+	@include sprite-silk;
+	background-position: -496px -416px;
+}
+
+.sprite-silk-application_form_delete {
+	@include sprite-silk;
+	background-position: -496px -432px;
+}
+
+.sprite-silk-application_form_add {
+	@include sprite-silk;
+	background-position: -496px -448px;
+}
+
+.sprite-silk-application_form {
+	@include sprite-silk;
+	background-position: -496px -464px;
+}
+
+.sprite-silk-application_error {
+	@include sprite-silk;
+	background-position: -496px -480px;
+}
+
+.sprite-silk-application_edit {
+	@include sprite-silk;
+	background-position: 0px -496px;
+}
+
+.sprite-silk-application_double {
+	@include sprite-silk;
+	background-position: -16px -496px;
+}
+
+.sprite-silk-application_delete {
+	@include sprite-silk;
+	background-position: -32px -496px;
+}
+
+.sprite-silk-application_cascade {
+	@include sprite-silk;
+	background-position: -48px -496px;
+}
+
+.sprite-silk-application_add {
+	@include sprite-silk;
+	background-position: -64px -496px;
+}
+
+.sprite-silk-application {
+	@include sprite-silk;
+	background-position: -80px -496px;
+}
+
+.sprite-silk-anchor {
+	@include sprite-silk;
+	background-position: -96px -496px;
+}
+
+.sprite-silk-add {
+	@include sprite-silk;
+	background-position: -112px -496px;
+}
+
+.sprite-silk-accept {
+	@include sprite-silk;
+	background-position: -128px -496px;
+}

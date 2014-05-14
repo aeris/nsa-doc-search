@@ -35,9 +35,8 @@ class PagesController < ApplicationController
 	end
 
 	def show
-		document = params[:document_id]
+		@document = Document.find_by! name: params[:document_id]
 		page = params[:id]
-		document = File.join Rails.configuration.documents_path, 'png-small', "#{document}-#{page}.png"
-		send_file document, type: 'image/png', disposition: :inline
+		send_file @document.png(page), type: 'image/png', disposition: :inline
 	end
 end

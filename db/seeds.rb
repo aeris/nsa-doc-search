@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+ActiveRecord::Base.transaction do
+	Dir["#{Document::PDF_PATH}/*.pdf"].each do |doc|
+		o, _ = Open3.capture2e 'identify', '-format', '%n', doc
+		name = File.basename doc, '.pdf'
+		pages = o.to_i
+		p Document.create! name: name, pages: pages
+	end
+end

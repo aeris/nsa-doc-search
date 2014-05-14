@@ -9,10 +9,13 @@ gem 'jquery-ui-rails'
 gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 
+gem 'naturalsort'
+
 gem 'stretcher'
 gem 'faraday', '~> 0.8.9'
 
 gem 'therubyracer', platforms: :ruby
+gem 'sqlite3'
 
 group :development do
 	gem 'uglifier'
