@@ -38,50 +38,63 @@ body.lightbox-open,
 	}
 
 	.lightbox-dialog {
-	z-index: 1050;
-	width: auto;
-	/*padding: 10px;*/
-	margin-right: auto;
-	margin-left: auto;
+		z-index: 1050;
+		width: auto;
+		/*padding: 10px;*/
+		margin-right: auto;
+		margin-left: auto;
 
-	.lightbox-header {
-		float: right;
-		.close {
-			margin-top: -2px;
+		.lightbox-header {
+			color: #fff;
+			text-shadow: 0 0 0 #fff;
+			.lightbox-title {
+				margin: 0;
+				line-height: 1.42857;
+			}
+			.close {
+				color: #fff;
+				text-shadow: 0 0 0 #fff;
+				float: right;
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 1;
+				opacity: 1;
+				margin-bottom: 2px;
+				margin-right: 2px;
+			}
+		}
+
+		.lightbox-content {
+			position: relative;
+			background-color: #ffffff;
+			border: 1px solid #999999;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			border-radius: 6px;
+			outline: none;
+			-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+			background-clip: padding-box;
+			/**/
+			padding: 10px;
+			display: inline-block;
+
+			.lightbox-caption {
+				position: absolute;
+				right: 8px;
+				bottom: 8px;
+				left: 10px;
+				padding: 2%;
+				font-size: 14px;
+				line-height: 18px;
+				color: white;
+				text-align: center;
+				text-shadow: 0 -1px 0 #000;
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+				background: #000;
+				background: rgba(0, 0, 0, 0.6);
+			}
 		}
 	}
-
-	.lightbox-content {
-		position: relative;
-		background-color: #ffffff;
-		border: 1px solid #999999;
-		border: 1px solid rgba(0, 0, 0, 0.2);
-		border-radius: 6px;
-		outline: none;
-		-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-		box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-		background-clip: padding-box;
-		/**/
-		padding: 10px;
-		display: inline-block;
-
-		.lightbox-caption {
-			position: absolute;
-			right: 8px;
-			bottom: 8px;
-			left: 10px;
-			padding: 2%;
-			font-size: 14px;
-			line-height: 18px;
-			color: white;
-			text-align: center;
-			text-shadow: 0 -1px 0 #000;
-			text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
-			background: #000;
-			background: rgba(0,0,0,0.6);
-		}
-	}
-}
 }
 
 
