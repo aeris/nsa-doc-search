@@ -81,5 +81,5 @@ DocSearch::Application.configure do
 
 
   config.es = Stretcher::Server.new 'http://localhost:9200/'
-  config.documents_path = File.join Rails.root, '../../../ocr'
+  config.documents_path = File.expand_path File.join Rails.root, '../../../docs'
 end

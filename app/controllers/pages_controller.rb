@@ -37,6 +37,7 @@ class PagesController < ApplicationController
 	def show
 		@document = Document.find_by! name: params[:document_id]
 		page = params[:id]
-		send_file @document.png(page), type: 'image/png', disposition: :inline
+		small = params[:size] != 'big'
+		send_file @document.png(page, small: small), type: 'image/png', disposition: :inline
 	end
 end

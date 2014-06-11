@@ -20,7 +20,7 @@ class Document < ActiveRecord::Base
 	end
 
 	def png(page, small: true)
-		File.join (small ? PNG_SMALL_PATH : PNG_PATH), "#{self.name}-#{page.to_i-1}.txt"
+		File.join (small ? PNG_SMALL_PATH : PNG_PATH), "#{self.name}-#{page.to_i}.png"
 	end
 
 	def to_param

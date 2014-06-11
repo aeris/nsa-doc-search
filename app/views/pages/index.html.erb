@@ -57,6 +57,7 @@
 				<tbody>
 					<% @results[:items].each do |result|
 						doc, page = result[:doc], result[:page]
+						lightbox = "lightbox-#{doc}-#{page}"
 					%>
 						<tr>
 							<th class="document">
@@ -64,7 +65,17 @@
 							</th>
 							<th class="page"><%= page+1 %></th>
 							<td class="image">
-								<%= image_tag document_page_path(doc, page, format: :png) %>
+								<%= content_tag :div, id: lightbox, class: %i(lightbox fade),
+												tabindex: -1, role: :dialog, 'aria-hidden' => true do %>
+									<div class="lightbox-dialog">
+										<div class="lightbox-content">
+											<%= image_tag document_page_path(doc, page, format: :png, size: :big) %>
+										</div>
+									</div>
+								<% end %>
+								<%= link_to '#', data: { toggle: :lightbox, target: "##{lightbox}" } do
+									image_tag document_page_path(doc, page, format: :png)
+								end %>
 							</td>
 							<%= content_tag :td, result[:text].html_safe if @with_text %>
 						</tr>
